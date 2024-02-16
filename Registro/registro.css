@@ -1,0 +1,19 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+body{
+    background-image: url('registro.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  
+}
+
+.form{
+    background: white;
+    width: 35%;
+}
+.form-title{
+    color: #31B44A;
+    text-align: center;
+}
