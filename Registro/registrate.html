@@ -9,32 +9,42 @@
 </head>
 
 <body>
+    <div class="cont__img">
+        <img src=".\recursos\registro.png" alt="">
+    </div>
     <form action="" class="form">
-        <h3 class="form-title">REGISTRATE</h3>
+        <h3 class="form__title">REGISTRATE</h3>
 
-        <div class="form-container">
-            <div class="form-group">
+        <div class="form__container">
+            <div class="form__group">
                 <label for="Nombre de usuario">Nombre de usuario</label>
-                <input type="text" name="nombre" id="nombre" class="form-imput" placeholder="Nombre de usuario" />
+                <input type="text" name="nombre" id="nombre" class="form__imput" placeholder="Nombre de usuario" />
             </div>
-            <div class="form-group">
+            <div class="form__group">
                 <label for="correo electrónico ">correo electrónico </label>
-                <input type="email" name="correo" id="correo" class="form-imput" placeholder="correo electrónico " />
+                <input type="email" name="correo" id="correo" class="form__imput" placeholder="correo electrónico " />
             </div>
-            <div class="form-group">
+            <div class="form__group">
                 <label for="password">contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" class="form-imput" placeholder="contraseña" />
+                <input type="password" name="contraseña" id="contraseña" class="form__imput" placeholder="contraseña" />
             </div>
 
-            <p class="">
+            <p class="form__paragraph">
                 consulte nuestra <a href="">politica de privacidad</a> para obtener
                 detalles
             </p>
 
             <input type="checkbox" name="check-privacy" id="check-privacy" />
-            <label for="check-privacy">He leido y acepto los terminos y condiciones.</label>
+            <label for="check-privacy" class="form__paragraph">He leido y acepto los terminos y condiciones.</label>
 
-            <input type="submit" class="form-submit" value="Crear cuenta" />
+            <input type="submit" class="form__submit" value="Crear cuenta" />
+
+            <p class="form__pargraph__p">
+                O crear con 
+            </p>
+
+            <input type="submit" class="form__submit__google" value="Continuar con Google">
+
         </div>
     </form>
 

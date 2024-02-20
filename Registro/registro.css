@@ -1,19 +1,19 @@
-* {
+*{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-}
-body{
-    background-image: url('registro.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;  
+    margin: 0;
+    padding: 0;
 }
 
 .form{
     background: white;
-    width: 35%;
+    width: 35vw;
+    height: 100vh;
 }
-.form-title{
-    color: #31B44A;
-    text-align: center;
+.form__imput{
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
 }
