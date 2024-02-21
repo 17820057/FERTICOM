@@ -5,48 +5,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FERTICOM</title>
-    <link rel="icon" href="\Users\ASZC1\OneDrive\Documentos\FERTICOM PROGRAM\recursos\favicon.ico">
+    <link rel="icon" href="..\recursos\favicon.ico">
     <link rel="stylesheet" href="registro.css" />
 </head>
 
 <body>
-    <div class="cont__img">
-        <img src=".\recursos\registro.png" alt="">
-    </div>
-    <form action="" class="form">
-        <h3 class="form__title">REGISTRATE</h3>
-
-        <div class="form__container">
-            <div class="form__group">
-                <label for="Nombre de usuario">Nombre de usuario</label>
-                <input type="text" name="nombre" id="nombre" class="form__imput" placeholder="Nombre de usuario" />
-            </div>
-            <div class="form__group">
-                <label for="correo electrónico ">correo electrónico </label>
-                <input type="email" name="correo" id="correo" class="form__imput" placeholder="correo electrónico " />
-            </div>
-            <div class="form__group">
-                <label for="password">contraseña</label>
-                <input type="password" name="contraseña" id="contraseña" class="form__imput" placeholder="contraseña" />
-            </div>
-
-            <p class="form__paragraph">
-                consulte nuestra <a href="">politica de privacidad</a> para obtener
-                detalles
-            </p>
-
-            <input type="checkbox" name="check-privacy" id="check-privacy" />
-            <label for="check-privacy" class="form__paragraph">He leido y acepto los terminos y condiciones.</label>
-
-            <input type="submit" class="form__submit" value="Crear cuenta" />
-
-            <p class="form__pargraph__p">
-                O crear con 
-            </p>
-
-            <input type="submit" class="form__submit__google" value="Continuar con Google">
-
+    <div class="registro">
+        <div class="cont__img">
+            <img src="../recursos/registro.png" alt="">
         </div>
+        <form action="" class="form">
+            <h3 class="form__title">REGISTRATE</h3>
+
+            <div class="form__container">
+                <div class="form__group">
+                    <label for="Nombre de usuario">Nombre de usuario</label>
+                    <input type="text" name="nombre" id="nombre" class="form__imput" placeholder="Nombre de usuario" />
+                </div>
+                <div class="form__group">
+                    <label for="correo electrónico ">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" class="form__imput"
+                        placeholder="Correo electrónico" />
+                </div>
+                <div class="form__group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" class="form__imput"
+                        placeholder="Contraseña" />
+                </div>
+
+                <div class="form__text">
+                    <p class="form__paragraph">
+                        consulte nuestra <a class="form__paragraph__href" href="">politica de privacidad</a> para
+                        obtener
+                        detalles
+                    </p>
+                    <div class="form__verify">
+                        <input type="checkbox" name="check-privacy" id="check-privacy" />
+                        <label for="check-privacy" class="form__paragraph">He leido y acepto los terminos y
+                            condiciones.</label>
+                    </div>
+                    <div class="form__submit__align" >
+                        <input type="submit" class="form__submit" value="Crear cuenta"/>
+                        
+                        <p class="form__pargraph__p">
+                            O Registrate con
+                        </p>
+                        <button type="submit" class="form__submit__google" >
+                            <span class="form__submit__icon"></span>
+                            <span class="form__submit__text">Continuar con Google</span>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+    </div>
     </form>
 
 </body>
