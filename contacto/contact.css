@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.contact{
+    font-size: 40px;
+    font-weight: 600;
+    width: 40%;
+    padding: 2em;
+}
+.registro{
+    display: flex;
+    flex-direction: row;
+    width: 60% ;
+    padding: 2em;
+}
+.form{
+    padding: 2em;
+    background: white;
+    width: 50vw;
+    height: auto;
+}
+
+.form__group{
+    font-weight: 500;
+    margin-top: 1.4em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.cont__img{
+    width: 65vw;
+    height: 100vh;
+}
+.form__imput{
+    width: 100%;
+    padding:0.5em;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+.form__submit{
+    width: 40%;
+    color: #ffff;
+    background-color: #31A44B;
+    height: 3.5em;
+    border: 2px solid #000;
+    border-radius: 0.6em;
+    font-weight: 600;
+    cursor: pointer;
+}   
+select{
+    color:#999999;
+}
+.form__button-container {
+    margin-top: 2em;
+    text-align: center;
+}
+.oficinas{
+    background-color: #31A44B;
+    height: 120px;
+    color: #ffff;
+    border: 0;
+    padding: 0;
+}
+.oficinas__title{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    font-weight: 600;
+    font-size: 20px;
+}
+.oficinas__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
