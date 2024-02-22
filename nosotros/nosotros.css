@@ -1,0 +1,120 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 2em;
+}
+.info{
+    width: 55%;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+img{
+    width: 570px;
+    margin-right: 2em;
+
+}
+.info__title{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    color: #31A44B;
+    margin: 20px;
+}
+.info__p{
+    font-size: 30px; 
+    font-weight: 500;
+    margin: 1em;
+    margin-bottom: 0.4em;
+    text-align: justify;
+}
+.bx-history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.logros,
+.vision,
+.mision{
+    margin-bottom: 2em;
+    margin-top:2em ;
+    display: flex;
+    flex-direction: row;
+    background-color: #23231F;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    width: 410px;
+    border-radius: 8px;
+}   
+
+.bx-icon{
+    width: 130px;
+}
+
+.bx-text{
+    font-size: 35px;
+    color: #fff;
+}
+
+.footer{
+    margin: 0;
+    padding: 0;
+    background:#404040;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.footer__logos{
+    margin: 20px;
+    align-items: center;
+}
+.footer__ferticom{
+    margin-top: 6px;
+    width: 210px;
+    height: 70px;
+}
+.footer__redes{
+    width: 210px;
+    height: 70px;
+    text-align: center;
+}
+.icons{
+    width: 35px;
+    padding: 5px;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: row;
+}
+.footer__vinculos{
+    display: flex;
+    flex-direction: column;
+}
+.v__Ayuda,
+.v__mercado,
+.v__Eventos,
+.vi__mercado,
+.vin__mercado,
+.vi__Ayuda{
+    color: #fff;
+    margin-right: 6em;
+    margin-left: 6em;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 20px;
+}   
+.v__Ayuda,
+.v__mercado,
+.v__Eventos{
+    margin-top: 2em;
+    font-weight: 600;
+    
+}
+.footer__copyright{
+    text-align: center;
+    color: #fff;
+    padding-bottom: 1em;
+    font-size: 15px;
+}
