@@ -61,24 +61,40 @@ header {
     color: white;
 }
 
+.crea-sesion {
+    background-color: white;
+}
+
 .inicio-sesion {
     margin-right: 10px;
     color: black;
-    font-weight: bold;  
+    font-weight: bold; 
+    background-color: white; 
+}
+
+
+.bx {
+    background-color: white;
 }
 
 .icono-tienda {
+    background-color: white;
     text-decoration: none;
     font-size: 40px;
-    width: 30px; 
-    height: 80px; 
+    width: 40px; 
+    height: 40px; 
     position: absolute;
     right: 50px;
     top: 20px;
 }
 
+.icono-tienda a {
+    color: black;
+    background-color: white;
+}
 
 
+/* FOOTER */
 
 .footer{
     margin: 0;
