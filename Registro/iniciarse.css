@@ -1,0 +1,127 @@
+body {
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    padding: 2em;
+    background: white;
+    width: 35vw;
+    height:70vh;
+    padding: 2em;
+    box-shadow: 7px 13px 37px grey;
+}
+
+.form__title{
+    text-align: center;
+    color: #31A44B;
+    margin-bottom: 2em;
+    font-size: 1.4em;
+}
+
+.form__group{
+    font-weight: 500;
+    margin-top: 1.4em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+.cont__img{
+    width: 65vw;
+    height: 100vh;
+}
+
+
+.form__imput{
+    width: 100%;
+    padding:0.5em;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+.form__text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+}
+
+.form__paragraph{
+    margin-top: 0.2em;
+    text-align: right;
+}
+
+.form__paragraph__href{
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+.form__submit__align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form__submit{
+    width: 40%;
+    color: #ffff;
+    background-color: #31A44B;
+    height: 3.5em;
+    border: 2px solid #000;
+    border-radius: 0.6em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form__pargraph__p{
+    color: #31A44B;
+    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1.8em;
+}
+
+.form__submit__google{
+    width: 60%;
+    background-color: #ffff;
+    height: 4em;
+    width: auto;
+    border-radius: 0.6em;
+    font-weight: 600;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__submit__icon {
+    background-image: url('../recursos/GOOGLE.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 3em; 
+    height: 3em;
+}
+.form__submit__text{
+    margin-left: 0.3em;
+}
+.form__paragraph__end{
+    margin-top: 3em;
+    text-align: center;
+}
+
+.form__paragraph__href__end{
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
