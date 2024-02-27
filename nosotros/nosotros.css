@@ -77,15 +77,15 @@ img{
     height: 70px;
 }
 .footer__redes{
-    width: 210px;
-    height: 70px;
     text-align: center;
     display: flex;
     flex-direction: row;
+
 }
 .icons{
-    width: 35px;
+    width: 40px;
     padding: 5px;
+    justify-content: center;
 }
 .footer__menu{
     display: flex;
