@@ -69,6 +69,7 @@ img{
 .footer__logos{
     margin: 20px;
     align-items: center;
+    
 }
 .footer__ferticom{
     margin-top: 6px;
@@ -79,6 +80,8 @@ img{
     width: 210px;
     height: 70px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 .icons{
     width: 35px;

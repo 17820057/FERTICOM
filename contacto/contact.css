@@ -101,6 +101,8 @@ select{
     width: 210px;
     height: 70px;
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 .icons{
     width: 35px;
