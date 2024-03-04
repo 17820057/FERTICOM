@@ -7,14 +7,21 @@
 
 .registro{
     display: flex;
-    flex-direction: row;
+    flex-direction: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
 }
 
 .form{
+
     padding: 2em;
     background: white;
-    width: 35vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .form__title{
@@ -32,10 +39,11 @@
 }
 
 .cont__img{
-    width: 65vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
+    margin: 0%;
+    padding: 0;
 }
-
 
 .form__imput{
     width: 100%;
@@ -94,7 +102,7 @@
 }
 
 .form__submit__google{
-    width: 60%;
+    width: auto;
     background-color: #ffff;
     height: 4em;
     border-radius: 0.6em;
@@ -106,7 +114,9 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.form__submit__text{
+    margin-left: 0.3em;
+}
 .form__submit__icon {
     background-image: url('../recursos/GOOGLE.jpg');
     background-size: cover; 

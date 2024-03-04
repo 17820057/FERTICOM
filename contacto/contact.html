@@ -7,11 +7,70 @@
     <title>FERTICOM</title>
     <link rel="icon" href="..\recursos\favicon.ico">
     <link rel="stylesheet" href="contact.css" />
+
 </head>
 
 <body>
+    <Script>
+
+    </Script>
+    <div class="seccion-fondo">
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <img src="../recursos/LOGO FERTICOM.png" alt="logo" />
+                </div>
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="../inicio/inicio.html">INICIO</a></li>
+                        <li><a href="../nosotros/noso.html">NOSOTROS</a></li>
+                        <li><a href="../portafolio/portafolio.html">PORTAFOLIO</a></li>
+                        <li><a href="../contacto/contact.html">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="crea-sesion">
+                    <a href="../Registro/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
+                    <a href="../Registro/iniciarse.html" class="inicio-sesion">Iniciar sesión</a>
+                    <div class="icono-tienda">
+                        <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="title_pg">
+            <h1 class="contact">¡Contáctanos ahora!</h1>
+        </div>
+    </div>
+    </div>
     <div class="container">
-        <p class="contact">¡Contáctanos ahora!</p>
+        <div class="comentarios">
+            <div class="contact-form">
+                <div class="testimonial-form">
+                    <label class="_label" for="name">Nombre:</label>
+                    <input class="testimonial-form-input" type="text" id="name" placeholder="Escribe tu Nombre"
+                        required /><br>
+                    <label class="_label" for="comentario">Comentario:</label>
+                    <textarea class="testimonial-form-input" type="" id="comment" placeholder="Escribe un comentario"
+                        required></textarea><br>
+                    <label class="_label" for="name">Rol</label>
+                    <input class="testimonial-form-input" type="text" id="role" placeholder="Escribe tu Rol"
+                        required /><br>
+                    <div class="star-rating">
+                        <span data-value="5">&#9733;</span>
+                        <span data-value="4">&#9733;</span>
+                        <span data-value="3">&#9733;</span>
+                        <span data-value="2">&#9733;</span>
+                        <span data-value="1">&#9733;</span>
+                    </div>
+                    <button onclick="submitTestimonial()" class="button">Enviar</button>
+                </div>
+
+                <div id="testimonial-slide-container">
+                    <div class="testimonials" id="testimonials">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="registro">
             <form action="" class="form">
                 <div class="form__container">
@@ -71,23 +130,24 @@
             <div class="footer__logos">
                 <img class="footer__ferticom" src="../recursos/LOGO FERTICOM.png" alt="">
                 <div class="footer__redes">
-                    <img class="icons" src="../recursos/logo face redes.png" alt="">
-                    <img class="icons" src="../recursos/logo insta redes.png" alt="">
-                    <img class="icons" src="../recursos/logo tiktok redes.png" alt="">
+                    <a href="" target="_blank"><img class="icons" src="../recursos/logo face redes.png" alt=""></a>
+                    <a href="" target="_blank"><img class="icons" src="../recursos/logo insta redes.png" alt=""></a>
+                    <a href="" target="_blank"></a><img class="icons" src="../recursos/logo tiktok redes.png"
+                        alt=""></a>
                 </div>
             </div>
             <div class="footer__menu">
-                <div class="footer__vinculos">
-                    <a class="v__Eventos" href="general.html">Eventos</a>
+                <div class="footer__vinculos__i">
+                    <a class="v__Eventos" href="../preguntas/preguntas.html">Eventos</a>
+                </div>
+                <div class="footer__vinculos__i">
+                    <a class="v__mercado" href="../preguntas/preguntas.html">Mercado</a>
+                    <a class="vi__mercado" href="../preguntas/preguntas.html">Nacional</a>
+                    <a class="vin__mercado" href="../preguntas/preguntas.html">Internacional</a>
                 </div>
                 <div class="footer__vinculos">
-                    <a class="v__mercado" href="general.html">Mercado</a>
-                    <a class="vi__mercado" href="general.html">Nacional</a>
-                    <a class="vin__mercado" href="general.html">Internacional</a>
-                </div>
-                <div class="footer__vinculos">
-                    <a class="v__Ayuda" href="general.html">¿Necesitas ayuda?</a>
-                    <a class="vi__Ayuda" href="general.html">Preguntas frecuentes</a>
+                    <a class="v__Ayuda" href="../preguntas/preguntas.html">¿Necesitas ayuda?</a>
+                    <a class="vi__Ayuda" href="../preguntas/preguntas.html">Preguntas frecuentes</a>
                 </div>
             </div>
         </div>
@@ -95,7 +155,7 @@
             <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
         </div>
     </footer>
-
+    <Script src="contact.js"></Script>
 </body>
 
 </html>
