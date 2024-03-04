@@ -93,16 +93,7 @@ header {
     background-position:left;
     background-repeat: no-repeat;
 }
-.title_pg{
-    position: absolute;
-    align-items: center;
-    margin-top: 1em;
-    font-size: 180px;
-    font-weight:bolder;
-    color: white;
-    width: 100vw;
-    height: 20vh;
-}
+
 
 /* BODY */
 .testimonial-form {
@@ -121,16 +112,21 @@ textarea {
 .name {
     display: inline-block;
     vertical-align: top;
-    font-size: 1.7em;
     font-weight: bold;
+    font-size: 30px;
+    color:#31A44B ;
 }
 .title {
     display: block;
-    color: #777;
-    font-size: 1.2em;
+    color: #000;
+    font-size: 25px;
+}
+.comment{
+    font-size:20px;
+    color: #000;
 }
 .rating {
-    color: gold;
+    color:#31A44B;
 }
 .button {
     align-self: center;
@@ -146,7 +142,7 @@ textarea {
 .star-rating {
     unicode-bidi: bidi-override;
     direction: rtl;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
     text-align: left;
     margin-bottom: 1em;
@@ -158,7 +154,7 @@ textarea {
 }
 .star-rating>span:hover,
 .star-rating>span:hover~span {
-    color: gold;
+    color: #31A44B;
 }
 .testimonials {
     margin-left: 2em;
@@ -173,15 +169,15 @@ textarea {
 }
 .contact-form {
     margin-left: 2em;
-    margin-top: 3em;
+    margin-top: 2em;
     width: 100%;
 }
-#testimonial-slide-container {
+#testimonial-slide-container{
     position: relative;
-    height: 400px;
+    height: 300px;
     width: 100%;
     overflow: hidden;
-    margin-top: 20px;
+    margin-top: 1em ;
 }
 .testimonial-slide {
     position: absolute;
@@ -204,11 +200,15 @@ textarea {
     border: none;
     border-bottom: 1px solid #000;
     text-transform: capitalize;
-    height: 2.5em;
+    height: 2em;
     width: 100%;
-    padding-top:1em;
-    padding-bottom: 1em;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
 }   
+.testimonial-form-input:focus{
+    border: 1px solid #31A44B;
+    outline: none;  
+}
 .label{
     margin-top: 1em;
 }
@@ -216,20 +216,20 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    margin-bottom: 0;
 }
 .contact {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 400;
     width: auto;
-    margin-bottom: 1em;
     text-align: center;
 }
 .registro {
     display: flex;
     flex-direction: row;
     width: 60%;
-    padding: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .form {
     padding: 2em;
@@ -242,10 +242,6 @@ textarea {
     margin-top: 1.4em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-}
-.cont__img {
-    width: 65vw;
-    height: 100vh;
 }
 .form__imput {
     width: 100%;
@@ -266,12 +262,23 @@ textarea {
     cursor: pointer;
 }
 select {
-    color: #999999;
+    color: #000;
 }
 .form__button-container {
     margin-top: 2em;
     text-align: center;
 }
+.mapa{
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    padding: 0;
+}
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
 .oficinas {
     background-color: #31A44B;
     height: 120px;

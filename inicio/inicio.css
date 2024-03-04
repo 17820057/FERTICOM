@@ -10,19 +10,19 @@ body {
 }
 
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 75px;
-    background: white;
-    padding: 10px 100px;
-    position: relative;
-    border-radius: 80px;
-    bottom: -15px;
-    z-index: 1000;
-}
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        background: white;
+        padding: 10px 100px;
+        position: relative;
+        border-radius: 80px;
+        bottom: -15px;
+        z-index: 1000;
+    }
 
 .logo img {
     width: 200px;

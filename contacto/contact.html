@@ -9,153 +9,140 @@
     <link rel="stylesheet" href="contact.css" />
 
 </head>
-
-<body>
-    <Script>
-
-    </Script>
-    <div class="seccion-fondo">
-        <header>
-            <div class="menu">
-                <div class="logo">
-                    <img src="../recursos/LOGO FERTICOM.png" alt="logo" />
+<div class="seccion-fondo">
+    <header>
+        <div class="logo">
+            <img src="../recursos/LOGO FERTICOM.png" alt="logo" />
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="../inicio/inicio.html">INICIO</a></li>
+                <li><a href="../nosotros/noso.html">NOSOTROS</a></li>
+                <li><a href="../portafolio/portafolio.html">PORTAFOLIO</a></li>
+                <li><a href="../contacto/contact.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="crea-sesion">
+            <a href="../Registro/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
+            <a href="../Registro/iniciarse.html" class="inicio-sesion">Iniciar sesión</a>
+            <div class="icono-tienda">
+                <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>
+            </div>
+        </div>
+    </header>
+</div>
+<div class="contact">
+    <h1>¡Contáctanos ahora!</h1>
+</div>
+<div class="container">   
+    <div class="comentarios">
+        <div class="contact-form">
+            <div class="testimonial-form">
+                <label class="_label" for="name">Nombre:</label>
+                <input class="testimonial-form-input" type="text" id="name" placeholder="Escribe tu Nombre"
+                    required /><br>
+                <label class="_label" for="comentario">Comentario:</label>
+                <textarea class="testimonial-form-input" type="" id="comment" placeholder="Escribe un comentario"
+                    required></textarea><br>
+                <label class="_label" for="name">Rol</label>
+                <input class="testimonial-form-input" type="text" id="role" placeholder="Escribe tu Rol" required /><br>
+                <div class="star-rating">
+                    <span data-value="5">&#9733;</span>
+                    <span data-value="4">&#9733;</span>
+                    <span data-value="3">&#9733;</span>
+                    <span data-value="2">&#9733;</span>
+                    <span data-value="1">&#9733;</span>
                 </div>
-                <nav class="nav-bar">
-                    <ul>
-                        <li><a href="../inicio/inicio.html">INICIO</a></li>
-                        <li><a href="../nosotros/noso.html">NOSOTROS</a></li>
-                        <li><a href="../portafolio/portafolio.html">PORTAFOLIO</a></li>
-                        <li><a href="../contacto/contact.html">CONTACTO</a></li>
-                    </ul>
-                </nav>
-                <div class="crea-sesion">
-                    <a href="../Registro/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
-                    <a href="../Registro/iniciarse.html" class="inicio-sesion">Iniciar sesión</a>
-                    <div class="icono-tienda">
-                        <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>
-                    </div>
+                <button onclick="submitTestimonial()" class="button">Enviar</button>
+            </div>
+            <div id="testimonial-slide-container">
+                <div class="testimonials" id="testimonials">
                 </div>
             </div>
-        </header>
-        <div class="title_pg">
-            <h1 class="contact">¡Contáctanos ahora!</h1>
         </div>
     </div>
+    <div class="registro">
+        <form action="" class="form">
+            <div class="form__container">
+                <div class="form__group">
+                    <label for="Nombre de usuario">Nombre completo</label>
+                    <input type="text" name="nombre" id="nombre" class="form__imput" placeholder="Nombre completo" />
+                </div>
+                <div class="form__group">
+                    <label for="correo electrónico ">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" class="form__imput"
+                        placeholder="Correo electrónico" />
+                </div>
+                <div class="form__group">
+                    <label for="Teléfono">Teléfono</label>
+                    <input type="tel" name="Teléfono" id="Teléfono" class="form__imput" placeholder="Teléfono" />
+                </div>
+                <div class="form__group">
+                    <label for="Asunto del mensaje">Asunto del mensaje</label>
+                    <select class="form__imput" id="seleccion" name="opcion">
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="Asesoria">Asesoria</option>
+                        <option value="Cotizaciones">Cotizaciones</option>
+                        <option value="Catálogo">Catálogo</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="Comentario">Comentario</label>
+                    <input type="text" name="Comentario" id="Comentario" class="form__imput" placeholder="Comentario" />
+                </div>
+                <div class="form__button-container">
+                    <button type="submit" class="form__submit">
+                        <span class="form__submit__text">Enviar</span>
+                    </button>
+                </div>
+            </div>
+        </form>
     </div>
+</div>
+<div class="mapa">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.7945184267473!2d-75.15129842493982!3d4.4492939955249575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cf818aa9cc09%3A0xd744ed5b3db3e763!2sCra.%2013%20A%20%23138-55%2C%20Ibagu%C3%A9%2C%20Tolima!5e0!3m2!1ses!2sco!4v1708533184537!5m2!1ses!2sco"
+        allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="oficinas">
+    <h4 class="oficinas__title">Nuestras oficinas</h4>
+    <div class="oficinas__info">
+        <p>CRA 13 A # 138-55 Sector Oviedo</p>
+        <p>oxyagro@hotmail.com</p>
+        <p>(608) - 5166423, (608) - 2672748</p>
+    </div>
+</div>
+<footer class="footer">
     <div class="container">
-        <div class="comentarios">
-            <div class="contact-form">
-                <div class="testimonial-form">
-                    <label class="_label" for="name">Nombre:</label>
-                    <input class="testimonial-form-input" type="text" id="name" placeholder="Escribe tu Nombre"
-                        required /><br>
-                    <label class="_label" for="comentario">Comentario:</label>
-                    <textarea class="testimonial-form-input" type="" id="comment" placeholder="Escribe un comentario"
-                        required></textarea><br>
-                    <label class="_label" for="name">Rol</label>
-                    <input class="testimonial-form-input" type="text" id="role" placeholder="Escribe tu Rol"
-                        required /><br>
-                    <div class="star-rating">
-                        <span data-value="5">&#9733;</span>
-                        <span data-value="4">&#9733;</span>
-                        <span data-value="3">&#9733;</span>
-                        <span data-value="2">&#9733;</span>
-                        <span data-value="1">&#9733;</span>
-                    </div>
-                    <button onclick="submitTestimonial()" class="button">Enviar</button>
-                </div>
-
-                <div id="testimonial-slide-container">
-                    <div class="testimonials" id="testimonials">
-                    </div>
-                </div>
+        <div class="footer__logos">
+            <img class="footer__ferticom" src="../recursos/LOGO FERTICOM.png" alt="">
+            <div class="footer__redes">
+                <a href="" target="_blank"><img class="icons" src="../recursos/logo face redes.png" alt=""></a>
+                <a href="" target="_blank"><img class="icons" src="../recursos/logo insta redes.png" alt=""></a>
+                <a href="" target="_blank"></a><img class="icons" src="../recursos/logo tiktok redes.png" alt=""></a>
             </div>
         </div>
-        <div class="registro">
-            <form action="" class="form">
-                <div class="form__container">
-                    <div class="form__group">
-                        <label for="Nombre de usuario">Nombre completo</label>
-                        <input type="text" name="nombre" id="nombre" class="form__imput"
-                            placeholder="Nombre completo" />
-                    </div>
-                    <div class="form__group">
-                        <label for="correo electrónico ">Correo electrónico</label>
-                        <input type="email" name="correo" id="correo" class="form__imput"
-                            placeholder="Correo electrónico" />
-                    </div>
-                    <div class="form__group">
-                        <label for="Teléfono">Teléfono</label>
-                        <input type="tel" name="Teléfono" id="Teléfono" class="form__imput" placeholder="Teléfono" />
-                    </div>
-                    <div class="form__group">
-                        <label for="Asunto del mensaje">Asunto del mensaje</label>
-                        <select class="form__imput" id="seleccion" name="opcion">
-                            <option value="" disabled selected>Selecciona una opción</option>
-                            <option value="Asesoria">Asesoria</option>
-                            <option value="Cotizaciones">Cotizaciones</option>
-                            <option value="Catálogo">Catálogo</option>
-                        </select>
-                    </div>
-                    <div class="form__group">
-                        <label for="Comentario">Comentario</label>
-                        <input type="text" name="Comentario" id="Comentario" class="form__imput"
-                            placeholder="Comentario" />
-                    </div>
-                    <div class="form__button-container">
-                        <button type="submit" class="form__submit">
-                            <span class="form__submit__text">Enviar</span>
-                        </button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.7945184267473!2d-75.15129842493982!3d4.4492939955249575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cf818aa9cc09%3A0xd744ed5b3db3e763!2sCra.%2013%20A%20%23138-55%2C%20Ibagu%C3%A9%2C%20Tolima!5e0!3m2!1ses!2sco!4v1708533184537!5m2!1ses!2sco"
-            width="100%" height="80%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="oficinas">
-        <h4 class="oficinas__title">Nuestras oficinas</h4>
-        <div class="oficinas__info">
-            <p>CRA 13 A # 138-55 Sector Oviedo</p>
-            <p>oxyagro@hotmail.com</p>
-            <p>(608) - 5166423, (608) - 2672748</p>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__logos">
-                <img class="footer__ferticom" src="../recursos/LOGO FERTICOM.png" alt="">
-                <div class="footer__redes">
-                    <a href="" target="_blank"><img class="icons" src="../recursos/logo face redes.png" alt=""></a>
-                    <a href="" target="_blank"><img class="icons" src="../recursos/logo insta redes.png" alt=""></a>
-                    <a href="" target="_blank"></a><img class="icons" src="../recursos/logo tiktok redes.png"
-                        alt=""></a>
-                </div>
+        <div class="footer__menu">
+            <div class="footer__vinculos__i">
+                <a class="v__Eventos" href="../preguntas/preguntas.html">Eventos</a>
             </div>
-            <div class="footer__menu">
-                <div class="footer__vinculos__i">
-                    <a class="v__Eventos" href="../preguntas/preguntas.html">Eventos</a>
-                </div>
-                <div class="footer__vinculos__i">
-                    <a class="v__mercado" href="../preguntas/preguntas.html">Mercado</a>
-                    <a class="vi__mercado" href="../preguntas/preguntas.html">Nacional</a>
-                    <a class="vin__mercado" href="../preguntas/preguntas.html">Internacional</a>
-                </div>
-                <div class="footer__vinculos">
-                    <a class="v__Ayuda" href="../preguntas/preguntas.html">¿Necesitas ayuda?</a>
-                    <a class="vi__Ayuda" href="../preguntas/preguntas.html">Preguntas frecuentes</a>
-                </div>
+            <div class="footer__vinculos__i">
+                <a class="v__mercado" href="../preguntas/preguntas.html">Mercado</a>
+                <a class="vi__mercado" href="../preguntas/preguntas.html">Nacional</a>
+                <a class="vin__mercado" href="../preguntas/preguntas.html">Internacional</a>
+            </div>
+            <div class="footer__vinculos">
+                <a class="v__Ayuda" href="../preguntas/preguntas.html">¿Necesitas ayuda?</a>
+                <a class="vi__Ayuda" href="../preguntas/preguntas.html">Preguntas frecuentes</a>
             </div>
         </div>
-        <div class="footer__copyright">
-            <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
-        </div>
-    </footer>
-    <Script src="contact.js"></Script>
+    </div>
+    <div class="footer__copyright">
+        <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
+    </div>
+</footer>
+<Script src="contact.js"></Script>
 </body>
 
 </html>
