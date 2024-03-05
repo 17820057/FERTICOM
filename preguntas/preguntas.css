@@ -1,72 +1,225 @@
-.footer{
+* {
+    list-style: none;
     margin: 0;
     padding: 0;
-    background:#404040;
+    box-sizing: border-box;
 }
-.container{
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ECECEC;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    background: white;
+    padding: 20px 100px;
+    margin-top: 1.3em;
+    border-radius: 80px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    margin-bottom: -5px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.boton-ccuenta {
+    width: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: black;
+}
+
+.boton-ccuenta,
+.inicio-sesion {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.crea-sesion {
+    background-color: white;
+    align-items: center;
+}
+
+.inicio-sesion {
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+.bx {
+    background-color: white;
+}
+
+.icono-tienda {
+    background-color: white;
+    text-decoration: none;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 50px;
+    top: 1em;
+}
+
+.icono-tienda a {
+    color: black;
+    background-color: white;
+}
+
+
+.faq-container{
+    margin: 5em;
+}
+.faq-tittle{
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 3.5px solid #31a44b;
+    margin-bottom: 2em;
+}
+.faq-item{
+    border-bottom: 1px solid #000;
+}
+.faq-question {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    font-weight:600;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #ffff;
+    position: relative;
+    padding-left: 2em;
+}
+.faq-arrow {
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.8em;
+    align-self: center;
+}
+.faq-question.active .faq-arrow {
+    transform: rotate(90deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffff;
+    padding: 0 10px;
+    padding-left: 2em;
+}
+.faq-answer p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    margin: 0;
+    padding: 0;
+    background: #404040;
+}
+.container {
     display: flex;
     flex-direction: block;
 }
-.footer__logos{
+.footer__logos {
     margin-top: 2em;
     margin-left: 2em;
     align-items: center;
-    
 }
-.footer__ferticom{
+.footer__ferticom {
     margin-top: 1px;
     width: 210px;
     height: 70px;
 }
-.footer__redes{
+.footer__redes {
     text-align: center;
     margin-top: 1em;
     flex-direction: row;
     align-items: center;
     display: block;
 }
-.icons{
-    width: 35px;
+.icons {
+    width: 40px;
     padding: 5px;
     margin: 0 2px;
 }
-
-.footer__menu{
+.footer__menu {
     display: flex;
     flex-direction: row;
 }
 .footer__vinculos__i,
-.footer__vinculos{
+.footer__vinculos {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
 }
-
-.footer__vinculos__i{
+.footer__vinculos__i {
     border-right: 3px solid #2E2E2E;
-    
 }
 .v__Ayuda,
 .v__mercado,
 .v__Eventos,
 .vi__mercado,
 .vin__mercado,
-.vi__Ayuda{
+.vi__Ayuda {
     color: #fff;
     margin-right: 6em;
     margin-left: 6em;
     padding: 0.5em;
     text-decoration: none;
     font-size: 20px;
-}   
+}
 .v__Ayuda,
 .v__mercado,
-.v__Eventos{
+.v__Eventos {
     margin-top: 0.8em;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
-.footer__copyright{
+.footer__copyright {
     text-align: center;
     color: #fff;
     padding-top: 1.5em;

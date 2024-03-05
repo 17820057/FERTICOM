@@ -16,9 +16,17 @@ header {
     width: 100%;
     height: 75px;
     background: white;
-    padding: 10px 100px;
-    position: relative;
+    padding: 20px 100px;
+    position: absolute;
+    margin-top: 1em;
     border-radius: 80px;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .logo img {
@@ -49,7 +57,6 @@ header {
     padding: 10px 15px;
     background-color: black;
 }
-
 .boton-ccuenta,
 .inicio-sesion {
     display: inline-block;
@@ -58,80 +65,139 @@ header {
     text-decoration: none;
     color: white;
 }
-
 .crea-sesion {
     background-color: white;
 }
-
 .inicio-sesion {
     margin-right: 10px;
     color: black;
-    font-weight: bold; 
-    background-color: white; 
+    font-weight: bold;
+    background-color: white;
 }
-
-
 .bx {
     background-color: white;
 }
-
 .icono-tienda {
     background-color: white;
     text-decoration: none;
     font-size: 40px;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     position: absolute;
     right: 50px;
     top: 20px;
 }
-
 .icono-tienda a {
     color: black;
     background-color: white;
 }
+.seccion-fondo {
+    margin: 0;
+    padding: 0;
+    background-image: url(../recursos/nosotros\ 1.png);
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.title__pg {
+    position: absolute;
+    justify-content: center;
+    margin-top: 60vh;
+    color: #fff;
+    width: 100%;
 
+}
+.title__pg h2 {
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    font-size: 60px;
+}
 /* BODY */
-.contenedor{
+.contenedor {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-left: 2em;
+    margin-top: 2em;
 }
-.info{
+.info {
     width: 55%;
     border: 2px solid #000;
     border-radius: 8px;
+    font-size: 16px;
 }
-img{
-    width: 570px;
-    margin-right: 2em;
+.img__container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.slide-in-out {
+    width: 90%;
+    margin-left: 100%;
+    opacity: 1;
+    background-image: url('../recursos/nosotros\ 2.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    animation: slide-in-out 4s ease-in-out forwards;
+    border-radius: 10px;
 
 }
-.info__title{
+@keyframes slide-in-out {
+    0%,
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+    25% {
+        margin-left: 0;
+        opacity: 1;
+    }
+    50% {
+        margin-left: 100%;  
+        opacity: 0;
+    }
+    75% {
+        margin-left: 100%;
+        opacity: 0;
+    }
+}
+
+
+.info__title {
     text-align: center;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 50px;
     color: #31A44B;
-    margin: 20px;
+    margin: 1.2em;
 }
-.info__p{
-    font-size: 30px; 
+
+.info__p {
+    font-size: 30px;
     font-weight: 500;
     margin: 1em;
     margin-bottom: 0.4em;
     text-align: justify;
 }
-.bx-history{
+
+.history {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 1em;
 }
+
 .logros,
 .vision,
-.mision{
+.mision {
     margin-bottom: 2em;
-    margin-top:2em ;
+    margin-top: 2em;
     display: flex;
     flex-direction: row;
     background-color: #23231F;
@@ -140,92 +206,141 @@ img{
     justify-content: center;
     width: 410px;
     border-radius: 8px;
-}   
+}
 
-.bx-icon{
+.icon {
     width: 130px;
 }
 
-.bx-text{
+.text {
     font-size: 35px;
     color: #fff;
 }
+
+.container {
+    perspective: 1000px;
+    width: 100vw;
+    margin-top: 2em;
+    margin-bottom: 250px;
+}
+
+.cara {
+    will-change: transform;
+    width: 410px;
+    height: 200px;
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 3s;
+    transform-style: flat;
+    transform-origin: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.frente {
+    background-color: #23231F;
+}
+
+.reverso {
+    padding: 2em;
+    text-align: justify;
+    font-size: 1.2em;
+    background-color: #23231F;
+    transform: rotateY(-180deg);
+}
+
+.container:hover .frente {
+    transform: rotateY(-180deg);
+}
+
+.container:hover .reverso {
+    transform: rotateY(0deg);
+}
+
 /* FOOTER */
-.footer{
+.footer {
     margin: 0;
     padding: 0;
-    background:#404040;
+    background: #404040;
 }
-.container{
+
+.container__footer {
     display: flex;
     flex-direction: block;
 }
-.footer__logos{
+
+.footer__logos {
     margin-top: 2em;
     margin-left: 2em;
     align-items: center;
-    
+
 }
-.footer__ferticom{
+
+.footer__ferticom {
     margin-top: 1px;
     width: 210px;
     height: 70px;
 }
-.footer__redes{
+
+.footer__redes {
     text-align: center;
     margin-top: 1em;
     flex-direction: row;
     align-items: center;
     display: block;
 }
-.icons{
+
+.icons {
     width: 40px;
     padding: 5px;
     margin: 0 2px;
 }
 
-.footer__menu{
+.footer__menu {
     display: flex;
     flex-direction: row;
 }
+
 .footer__vinculos__i,
-.footer__vinculos{
+.footer__vinculos {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
 }
 
-.footer__vinculos__i{
+.footer__vinculos__i {
     border-right: 3px solid #2E2E2E;
-    
 }
+
 .v__Ayuda,
 .v__mercado,
 .v__Eventos,
 .vi__mercado,
 .vin__mercado,
-.vi__Ayuda{
+.vi__Ayuda {
     color: #fff;
     margin-right: 6em;
     margin-left: 6em;
     padding: 0.5em;
     text-decoration: none;
     font-size: 20px;
-}   
+}
+
 .v__Ayuda,
 .v__mercado,
-.v__Eventos{
+.v__Eventos {
     margin-top: 0.8em;
     font-weight: 600;
-    
 }
-.footer__copyright{
+
+.footer__copyright {
     text-align: center;
     color: #fff;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     font-size: 15px;
 }
-
-
-    
