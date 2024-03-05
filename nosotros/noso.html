@@ -7,6 +7,7 @@
     <title>FERTICOM</title>
     <link rel="icon" href="..\recursos\favicon.ico">
     <link rel="stylesheet" href="nosotros.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -27,10 +28,13 @@
                 <a href="../Registro/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
                 <a href="../Registro/iniciarse.html" class="inicio-sesion">Iniciar sesión</a>
                 <div class="icono-tienda">
-                    <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>   
+                    <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>
                 </div>
             </div>
         </header>
+        <div class="title__pg">
+            <h2>Conócenos: Historia y esencia </h2>
+        </div>
     </div>
     <div class="contenedor">
         <div class="info">
@@ -41,26 +45,51 @@
                 paquete tecnológico para la nutrición de calidad en todos los cultivos.</p>
         </div>
         <div class="img__container">
-            <img src="../recursos/nosotros 2.png" alt="">
+            <div class="slide-in-out">
+            </div>
         </div>
     </div>
-    <div class="bx-history">
-        <div class="vision">
-            <img class="bx-icon" src="../recursos/nosotros 5.png" alt="">
-            <p class="bx-text">VISIÓN</p>
+    <div class="history" onclick="girarcontenedor()">
+        <div class="container" onclick="girarcontenedor()">
+            <div class="cara frente">
+                <div class="vision">
+                    <img class="icon" src="../recursos/nosotros 5.png" alt="">
+                    <p class="text">VISIÓN</p>
+                </div>
+            </div>
+            <div class="cara reverso">
+                <p>Líderes en soluciones agrícolas innovadoras y sostenibles para nutrición y control de
+                    bacteriosis. Calidad garantizada, empleo generado, y vida comunitaria mejorada.</p>
+            </div>
         </div>
-        <div class="mision">
-            <img class="bx-icon" src="../recursos/nosotros 4.png" alt="">
-            <p class="bx-text">MISIÓN</p>
-        </div>
-        <div class="logros">
-            <img class="bx-icon" src="../recursos/nosotros 3.png" alt="">
-            <p class="bx-text">NUESTROS <br> LOGROS</p>
-        </div>
-    </div>
 
+        <div class="container" onclick="girarcontenedor()">
+            <div class="cara frente">
+                <div class="mision">
+                    <img class="icon" src="../recursos/nosotros 4.png" alt="">
+                    <p class="text">MISIÓN</p>
+                </div>
+            </div>
+            <div class="cara reverso">
+                <p>Buscamos ofrecer soluciones innovadoras y rentables para satisfacer las necesidades
+                    agrícolas, garantizando rentabilidad y sostenibilidad en todos los cultivos.</p>
+            </div>
+        </div>
+
+        <div class="container" onclick="girarcontenedor()">
+            <div class="cara frente">
+                <div class="logros">
+                    <img class="icon" src="../recursos/nosotros 3.png" alt="">
+                    <p class="text">NUESTROS <br> LOGROS</p>
+                </div>
+            </div>
+            <div class="cara reverso">
+
+            </div>
+        </div>
+    </div>
     <footer class="footer">
-        <div class="container">
+        <div class="container__footer">
             <div class="footer__logos">
                 <img class="footer__ferticom" src="../recursos/LOGO FERTICOM.png" alt="">
                 <div class="footer__redes">
@@ -88,6 +117,7 @@
             <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
         </div>
     </footer>
+    <script src="./nosotros.js"></script>
 </body>
 
 </html>

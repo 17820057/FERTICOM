@@ -18,6 +18,7 @@ header {
     position: absolute;
     margin-top: 1em;
     border-radius: 80px;
+    
 }
 .menu{
     display: flex;
@@ -73,8 +74,8 @@ header {
     background-color: white;
     text-decoration: none;
     font-size: 40px;
-    width: 40px;
-    height: 40px;
+    width: 40px; 
+    height: 40px; 
     position: absolute;
     right: 50px;
     top: 20px;
@@ -86,143 +87,44 @@ header {
 .seccion-fondo{
     margin: 0;
     padding: 0;
-    background-image: url(../recursos/contacto.png);
+    background-image: url(../recursos/contacto.jpeg);
     background-size: cover;
     width: 100vw; 
-    height: 45vh;
+    height: 80vh;
     background-position:left;
     background-repeat: no-repeat;
 }
+.title__pg{
+    position: absolute;
+    justify-content: center;
+    margin-top:60vh;
+    color: #fff;
+    width: 100%;
+    
+}
+.title__pg h2 {
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    font-size: 60px;
+}
+
 
 
 /* BODY */
-.testimonial-form {
-    background-color: #ffff;
-    padding: 20px;
-    margin-bottom: 10px;
-    width: 100;
-    display: flex;
-    flex-direction: column;
-    margin-left: 5 em;
-}
-textarea {
-    resize: none;
-    overflow: hidden;
-}
-.name {
-    display: inline-block;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 30px;
-    color:#31A44B ;
-}
-.title {
-    display: block;
-    color: #000;
-    font-size: 25px;
-}
-.comment{
-    font-size:20px;
-    color: #000;
-}
-.rating {
-    color:#31A44B;
-}
-.button {
-    align-self: center;
-    width: 40%;
-    color: #ffff;
-    background-color: #31A44B;
-    height: 3.5em;
-    border: 2px solid #000;
-    border-radius: 0.6em;
-    font-weight: 600;
-    cursor: pointer;
-}
-.star-rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    font-size: 30px;
-    cursor: pointer;
-    text-align: left;
-    margin-bottom: 1em;
-}
-.star-rating>span {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-}
-.star-rating>span:hover,
-.star-rating>span:hover~span {
-    color: #31A44B;
-}
-.testimonials {
-    margin-left: 2em;
-}
-.testimonial-slide {
-    background-color: #ffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 10px;
-    width: 100%;
-    border: 1px solid #31A44B;
-}
-.contact-form {
-    margin-left: 2em;
-    margin-top: 2em;
-    width: 100%;
-}
-#testimonial-slide-container{
-    position: relative;
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 1em ;
-}
-.testimonial-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.show-slide {
-    opacity: 1;
-}
-.comentarios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 40%;;
-    margin-left: 3em    ;
-}
-.testimonial-form-input {
-    border: none;
-    border-bottom: 1px solid #000;
-    text-transform: capitalize;
-    height: 2em;
-    width: 100%;
-    padding-top:0.5em;
-    padding-bottom: 0.5em;
-}   
-.testimonial-form-input:focus{
-    border: 1px solid #31A44B;
-    outline: none;  
-}
-.label{
-    margin-top: 1em;
-}
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 0;
 }
+
 .contact {
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight:400;
     width: auto;
     text-align: center;
+    padding: 1.5em;
 }
 .registro {
     display: flex;
@@ -241,7 +143,6 @@ textarea {
     font-weight: 500;
     margin-top: 1.4em;
     padding-left: 1.5em;
-    padding-right: 1.5em;
 }
 .form__imput {
     width: 100%;

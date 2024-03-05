@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <title>FERTICOM</title>
     <link rel="icon" href="..\recursos\favicon.ico">
     <link rel="stylesheet" href="contact.css" />
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <div class="seccion-fondo">
     <header>
@@ -25,41 +25,27 @@
         <div class="crea-sesion">
             <a href="../Registro/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
             <a href="../Registro/iniciarse.html" class="inicio-sesion">Iniciar sesión</a>
+
             <div class="icono-tienda">
-                <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>
+
+                <a href="../tienda/shop.html"><i class='bx bxs-store'></i></a>   
+
             </div>
         </div>
     </header>
+    <div class="title__pg">
+        <h2>¡Contáctanos! </h2>
+    </div>
 </div>
-<div class="contact">
-    <h1>¡Contáctanos ahora!</h1>
-</div>
-<div class="container">   
+
+<div class="container">
     <div class="comentarios">
-        <div class="contact-form">
-            <div class="testimonial-form">
-                <label class="_label" for="name">Nombre:</label>
-                <input class="testimonial-form-input" type="text" id="name" placeholder="Escribe tu Nombre"
-                    required /><br>
-                <label class="_label" for="comentario">Comentario:</label>
-                <textarea class="testimonial-form-input" type="" id="comment" placeholder="Escribe un comentario"
-                    required></textarea><br>
-                <label class="_label" for="name">Rol</label>
-                <input class="testimonial-form-input" type="text" id="role" placeholder="Escribe tu Rol" required /><br>
-                <div class="star-rating">
-                    <span data-value="5">&#9733;</span>
-                    <span data-value="4">&#9733;</span>
-                    <span data-value="3">&#9733;</span>
-                    <span data-value="2">&#9733;</span>
-                    <span data-value="1">&#9733;</span>
-                </div>
-                <button onclick="submitTestimonial()" class="button">Enviar</button>
-            </div>
-            <div id="testimonial-slide-container">
-                <div class="testimonials" id="testimonials">
-                </div>
-            </div>
+        <div class="contact">
+            <h2>¡Contáctanos ahora!</h2>
         </div>
+        <div class="conmment">
+        </div>
+
     </div>
     <div class="registro">
         <form action="" class="form">
@@ -99,11 +85,11 @@
         </form>
     </div>
 </div>
+
 <div class="mapa">
     <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.7945184267473!2d-75.15129842493982!3d4.4492939955249575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38cf818aa9cc09%3A0xd744ed5b3db3e763!2sCra.%2013%20A%20%23138-55%2C%20Ibagu%C3%A9%2C%20Tolima!5e0!3m2!1ses!2sco!4v1708533184537!5m2!1ses!2sco"
-        allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <div class="oficinas">
     <h4 class="oficinas__title">Nuestras oficinas</h4>
@@ -142,7 +128,6 @@
         <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
     </div>
 </footer>
-<Script src="contact.js"></Script>
 </body>
 
 </html>
