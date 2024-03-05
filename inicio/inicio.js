@@ -1,14 +1,25 @@
-const sliderinicio = document.querySelector('.sliderinicio');
-const figures = sliderinicio.querySelectorAll('li');
+const sliderInicio = document.querySelector('.sliderinicio');
+const slides = sliderInicio.querySelectorAll('li');
+// const totalSlides = slides.length;
 let currentIndex = 0;
 
-function showSlide() {
-  for (let i = 0; i < figures.length; i++) {
-    figures[i].style.opacity = 0;
-  }
-  figures[currentIndex].style.opacity = 1;
-  currentIndex = (currentIndex + 1) % figures.length;
+function showSlide(index) {
+    slides.forEach(slide => {
+        slide.style.opacity = 0;
+        slide.style.zIndex = 0;
+        // slide.style.display = 'none';
+    });
+
+    slides[index].style.opacity = 1;
+    slides[index].style.zIndex = 1;
+    // slides[index].style.display = 'block';
 }
 
-setInterval(showSlide, 3000);
-showSlide();
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    // currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+}
+
+showSlide(currentIndex);
+setInterval(nextSlide, 3000);
