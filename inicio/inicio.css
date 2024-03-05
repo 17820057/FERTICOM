@@ -178,12 +178,14 @@ body {
 
 .main-titulo {
     color: #31A44B;
-    font-weight: bold;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 35px;
     text-align: center;
     margin-left: 8em;
     margin-right: 8em;
     margin-top: 2em;
+    font-family: "Anton", sans-serif;
+    font-style: normal;  
 }
 
 
