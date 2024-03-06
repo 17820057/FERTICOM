@@ -4,10 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,22 +23,26 @@ header {
     position: absolute;
     margin-top: 1em;
     border-radius: 80px;
-    
+    z-index: 1000;
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .logo img {
     width: 200px;
     height: 60px;
     background-color: white;
     margin-bottom: -5px;
 }
+
 .nav-bar ul {
     display: flex;
 }
+
 .nav-bar ul li a {
     text-decoration: none;
     color: black;
@@ -43,6 +52,7 @@ header {
     border-radius: 50px;
     background-color: white;
 }
+
 .boton-ccuenta {
     width: 150px;
     border-radius: 8px;
@@ -50,6 +60,7 @@ header {
     padding: 10px 15px;
     background-color: black;
 }
+
 .boton-ccuenta,
 .inicio-sesion {
     display: inline-block;
@@ -58,57 +69,54 @@ header {
     text-decoration: none;
     color: white;
 }
+
 .crea-sesion {
     background-color: white;
 }
+
 .inicio-sesion {
     margin-right: 10px;
     color: black;
     font-weight: bold;
     background-color: white;
 }
+
 .bx {
     background-color: white;
 }
+
 .icono-tienda {
     background-color: white;
     text-decoration: none;
     font-size: 40px;
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     position: absolute;
     right: 50px;
     top: 20px;
 }
+
 .icono-tienda a {
     color: black;
     background-color: white;
 }
-.seccion-fondo{
-    margin: 0;
-    padding: 0;
-    background-image: url(../recursos/contacto.jpeg);
-    background-size: cover;
-    width: 100vw; 
-    height: 80vh;
-    background-position:left;
-    background-repeat: no-repeat;
-}
-.title__pg{
-    position: absolute;
-    justify-content: center;
-    margin-top:60vh;
-    color: #fff;
-    width: 100%;
-    
-}
-.title__pg h2 {
-    align-items: center;
-    text-align: center;
-    align-self: center;
-    font-size: 60px;
-}
 
+.seccion-fondo {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.seccion-fondo img {
+    transition: transform 7s ease;
+    transform: scale(0.8);
+}
+.zoom-activo img {
+    transform: scale(1.1);
+}
 
 
 /* BODY */
@@ -121,11 +129,12 @@ header {
 
 .contact {
     font-size: 30px;
-    font-weight:400;
+    font-weight: 400;
     width: auto;
     text-align: center;
     padding: 1.5em;
 }
+
 .registro {
     display: flex;
     flex-direction: row;
@@ -133,17 +142,20 @@ header {
     padding-left: 2em;
     padding-right: 2em;
 }
+
 .form {
     padding: 2em;
     background: white;
     width: 50vw;
     height: auto;
 }
+
 .form__group {
     font-weight: 500;
     margin-top: 1.4em;
     padding-left: 1.5em;
 }
+
 .form__imput {
     width: 100%;
     padding: 0.5em;
@@ -152,6 +164,7 @@ header {
     border-bottom: 1px solid #000;
     outline: none;
 }
+
 .form__submit {
     width: 40%;
     color: #ffff;
@@ -162,20 +175,24 @@ header {
     font-weight: 600;
     cursor: pointer;
 }
+
 select {
     color: #000;
 }
+
 .form__button-container {
     margin-top: 2em;
     text-align: center;
 }
-.mapa{
+
+.mapa {
     width: 100vw;
     height: 40vh;
     margin: 0;
     padding: 0;
 }
-.mapa iframe{
+
+.mapa iframe {
     width: 100%;
     height: 100%;
 }
@@ -187,6 +204,7 @@ select {
     border: 0;
     padding: 0;
 }
+
 .oficinas__title {
     text-align: center;
     padding-top: 1em;
@@ -194,31 +212,37 @@ select {
     font-weight: 600;
     font-size: 20px;
 }
+
 .oficinas__info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 /* FOOTER */
 .footer {
     margin: 0;
     padding: 0;
     background: #404040;
 }
+
 .container {
     display: flex;
     flex-direction: block;
 }
+
 .footer__logos {
     margin-top: 2em;
     margin-left: 2em;
     align-items: center;
 }
+
 .footer__ferticom {
     margin-top: 1px;
     width: 210px;
     height: 70px;
 }
+
 .footer__redes {
     text-align: center;
     margin-top: 1em;
@@ -226,24 +250,29 @@ select {
     align-items: center;
     display: block;
 }
+
 .icons {
     width: 40px;
     padding: 5px;
     margin: 0 2px;
 }
+
 .footer__menu {
     display: flex;
     flex-direction: row;
 }
+
 .footer__vinculos__i,
 .footer__vinculos {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
 }
+
 .footer__vinculos__i {
     border-right: 3px solid #2E2E2E;
 }
+
 .v__Ayuda,
 .v__mercado,
 .v__Eventos,
@@ -257,12 +286,14 @@ select {
     text-decoration: none;
     font-size: 20px;
 }
+
 .v__Ayuda,
 .v__mercado,
 .v__Eventos {
     margin-top: 0.8em;
-    font-weight: 600;   
+    font-weight: 600;
 }
+
 .footer__copyright {
     text-align: center;
     color: #fff;
@@ -270,3 +301,5 @@ select {
     padding-bottom: 1.5em;
     font-size: 15px;
 }
+
+

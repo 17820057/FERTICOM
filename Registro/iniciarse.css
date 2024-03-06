@@ -6,7 +6,6 @@ body {
     align-items: center;
     height: 100vh;
 }
-
 .form{
     padding: 2em;
     background: white;
@@ -15,27 +14,22 @@ body {
     padding: 2em;
     box-shadow: 7px 13px 37px grey;
 }
-
 .form__title{
     text-align: center;
     color: #31A44B;
     margin-bottom: 2em;
     font-size: 1.4em;
 }
-
 .form__group{
     font-weight: 500;
     margin-top: 1.4em;
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
-
 .cont__img{
     width: 65vw;
     height: 100vh;
 }
-
-
 .form__imput{
     width: 100%;
     padding:0.5em;
@@ -44,25 +38,21 @@ body {
     border-bottom: 1px solid #000;
     outline: none;
 }
-
 .form__text{
     display: flex;
     flex-direction: column;
     padding-left: 1.4em;
     padding-right: 1.4em;
 }
-
 .form__paragraph{
     margin-top: 0.2em;
     text-align: right;
 }
-
 .form__paragraph__href{
     font-weight: 600;
     color: #000;
     text-decoration: none;
 }
-
 .form__submit__align{
     display: flex;
     flex-direction: column;
@@ -99,7 +89,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
 .form__submit__icon {
     background-image: url('../recursos/GOOGLE.jpg');
     background-size: cover; 
@@ -119,4 +108,4 @@ body {
     font-weight: 600;
     color: #000;
     text-decoration: none;
-}
+} 
