@@ -99,7 +99,7 @@ header {
     background-color: white;
 }
 
-
+/* SECCION PREGUNTAS */
 .faq-container{
     margin: 5em;
 }
@@ -161,20 +161,26 @@ header {
     padding: 0;
     background: #404040;
 }
-.container {
+
+.container__footer {
     display: flex;
     flex-direction: block;
 }
+
 .footer__logos {
+    display: flex;
+    flex-direction: column;
     margin-top: 2em;
     margin-left: 2em;
     align-items: center;
 }
+
 .footer__ferticom {
     margin-top: 1px;
     width: 210px;
     height: 70px;
 }
+
 .footer__redes {
     text-align: center;
     margin-top: 1em;
@@ -182,24 +188,29 @@ header {
     align-items: center;
     display: block;
 }
+
 .icons {
     width: 40px;
     padding: 5px;
     margin: 0 2px;
 }
+
 .footer__menu {
     display: flex;
     flex-direction: row;
 }
+
 .footer__vinculos__i,
 .footer__vinculos {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
 }
+
 .footer__vinculos__i {
     border-right: 3px solid #2E2E2E;
 }
+
 .v__Ayuda,
 .v__mercado,
 .v__Eventos,
@@ -213,16 +224,18 @@ header {
     text-decoration: none;
     font-size: 20px;
 }
+
 .v__Ayuda,
 .v__mercado,
 .v__Eventos {
     margin-top: 0.8em;
-    font-weight: 600;   
+    font-weight: 600;
 }
+
 .footer__copyright {
     text-align: center;
     color: #fff;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     font-size: 15px;
-}   
+}

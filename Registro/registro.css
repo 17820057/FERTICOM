@@ -4,18 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .registro{
     display: flex;
     flex-direction: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
-
 }
-
 .form{
-
     padding: 2em;
     background: white;
     width: 40%;
@@ -23,14 +19,13 @@
     margin-left: auto;
     margin-right: 0;
 }
-
 .form__title{
     text-align: center;
     color: #31A44B;
     margin-bottom: 2em;
+    margin-top: 1em;
     font-size: 1.4em;
 }
-
 .form__group{
     font-weight: 500;
     margin-top: 1.4em;
@@ -44,7 +39,6 @@
     margin: 0%;
     padding: 0;
 }
-
 .form__imput{
     width: 100%;
     padding:0.5em;
@@ -53,29 +47,23 @@
     border-bottom: 1px solid #000;
     outline: none;
 }
-
 .form__text{
     display: flex;
     flex-direction: column;
     padding-left: 1.4em;
     padding-right: 1.4em;
 }
-
 .form__paragraph{
-    margin-top: 1em;
+    margin-top: 2em;
 }
-
 .form__paragraph__href{
     font-weight: 600;
     color: #000;
-
 }
-
 .form__verify{
-    margin-top: 1.6em;
+    margin-top: 3em;
     margin-bottom: 3em;
 }
-
 .form__submit__align{
     display: flex;
     flex-direction: column;
@@ -92,15 +80,13 @@
     font-weight: 600;
     cursor: pointer;
 }
-
 .form__pargraph__p{
     color: #31A44B;
     font-weight: 600;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     cursor: pointer;
 }
-
 .form__submit__google{
     width: auto;
     background-color: #ffff;
@@ -126,3 +112,4 @@
     height: 2em;
     margin-left: 1em;
 }
+
