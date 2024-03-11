@@ -117,8 +117,6 @@ header {
 .zoom-activo img {
     transform: scale(1.1);
 }
-
-
 /* BODY */
 .container {
     display: flex;
