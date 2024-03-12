@@ -159,20 +159,6 @@ body {
     border-radius: 10px;
 }
 
-/* @keyframes slide {
-    0% { margin-left: 0%; }
-    25% { margin-left: 0%; }
-
-    26% { margin-left: -100%; }
-    50% { margin-left: -100%; }
-
-    51% { margin-left: -200%; }
-    75% { margin-left: -200%; }
-
-    76% { margin-left: 0%; } 
-    100% { margin-left: 0%; }
-} */
-
 
 /* MAIN */
 
@@ -202,10 +188,13 @@ body {
 
 .imagenes-inicio {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     width: 60em; 
     height: 60em;
     margin: auto; 
+    overflow: hidden;
 }
 
 .imagenes-inicio img {
@@ -218,99 +207,73 @@ body {
     top: 2em;
     left: 2em; 
     width: 60em;
-    /* width: 20em; 
-    height: auto; */
     z-index: 1; 
 }
 
 .img2 {
-    top: 190px; 
-    left: 0; 
-    /* width: 268px; 
-    height: auto; */
+    top: 34em; 
+    left: 2em;
     z-index: 2; 
 }
 
 .img3 {
-    bottom: 0; 
-    right: 0;
-    /* width: 268px;
-    height: auto; */
+    top: 34em; 
+    left: 33em;
     z-index: 3; 
 }
 
-
-/* .imagenes-inicio {
-    position: relative;
+.main-text {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-1, .text-2, .text-3, .text-4 {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.text-1, .text-2 {
+    margin-left: 11em;
+}
+
+.text-3, .text-4 {
+    margin-right: 9em; 
+}
+
+
+.boton-descubre {
+    display: flex;
+    background-color: black;
+    border-radius: 50px;
+    margin-left: 44em;
+    margin-top: 5em;
+}
+
+.boton-descubre a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2vh;
+}
+
+.main-end {
+    color: #31A44B;
+    font-weight: 400;
+    font-size: 35px;
     text-align: center;
-    margin-top: 4em;
-    width: 550px;
-    height: 550px;
-    margin: 0;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    margin-top: 2em;
 }
-
-.imagenes-inicio img {
-    position: absolute;
-    width: 60%;
-    height: 60%;
-    margin: 0;
-}
-
-.img1 {
-    top: 2em;
-    left: 80%;
-    width: 100%;
-    height: 4em;
-    z-index: 1;
-}
-
-.img2 {
-    top: 30em;
-    left: 40%;
-    width: 50%;
-    height: 30%;
-    z-index: 2;
-}
-
-.img3 {
-    top: 30em;
-    left: 45em;
-    width: 50%;
-    height: 30%;
-    z-index: 3;
-}
-  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
