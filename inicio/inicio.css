@@ -150,13 +150,15 @@ body {
 .slider-text {
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 5%;
     transform: translateY(-50%);
-    color: #fff;
-    font-size: 2em;
+    color: white;
+    font-size: 35px;
     text-align: center;
     padding: 1em;
     border-radius: 10px;
+    font-family: "Anton", sans-serif;
+
 }
 
 
@@ -274,6 +276,25 @@ body {
     font-style: normal;
     margin-top: 2em;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
