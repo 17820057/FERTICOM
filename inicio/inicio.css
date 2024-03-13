@@ -187,6 +187,12 @@ body {
     margin-top: 2em;
 }
 
+.main-sub.parallax-section h3 {
+    opacity: 0;
+    animation: slideInFromLeft 1s ease forwards;
+    animation-delay: 0.6s; /* Ajusta este valor según necesites */
+}
+
 
 .imagenes-inicio {
     display: flex;
@@ -203,6 +209,8 @@ body {
     max-width: 60em; 
     max-height: 50%; 
     position: absolute;
+    transition: transform 0.5s ease-in-out;
+    transform-origin: center;
 }
 
 .img1 {
@@ -211,6 +219,7 @@ body {
     width: 60em;
     z-index: 1; 
 }
+
 
 .img2 {
     top: 34em; 
@@ -224,6 +233,20 @@ body {
     z-index: 3; 
 }
 
+/* .imagenes-inicio .img1, 
+.imagenes-inicio .img2, 
+.imagenes-inicio .img3 {
+    transition: transform 0.5s ease-in-out; 
+    transform: scale(1); 
+}
+
+.imagenes-inicio .img1:hover, 
+.imagenes-inicio .img2:hover, 
+.imagenes-inicio .img3:hover {
+    transform: scale(1.1); 
+} */
+
+
 .main-text {
     display: flex;
     justify-content: space-between;
@@ -232,9 +255,25 @@ body {
 }
 
 .text-group {
+    opacity: 0;
+    animation: slideInFromLeft 1s ease forwards;
+    animation-delay: 0.3s; /* Ajusta este valor según necesites */
     display: flex;
     flex-direction: column;
 }
+
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 .text-1, .text-2, .text-3, .text-4 {
     color: black;
@@ -257,6 +296,8 @@ body {
     border-radius: 50px;
     margin-left: 44em;
     margin-top: 5em;
+    overflow: hidden;
+    transform: transform 0.3s ease-in-out;
 }
 
 .boton-descubre a {
@@ -265,6 +306,12 @@ body {
     font-weight: bold;
     font-size: 25px;
     padding: 2vh;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.boton-descubre:hover {
+    transform: scale(1.08);
 }
 
 .main-end {
@@ -278,8 +325,15 @@ body {
 }
 
 
-
-
+.parallax-section {
+    height: 120vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 
 
