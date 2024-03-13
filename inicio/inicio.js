@@ -1,3 +1,5 @@
+// SLIDER AUTOMATICO ANIMACION
+
 const sliderInicio = document.querySelector('.sliderinicio');
 const slides = sliderInicio.querySelectorAll('li');
 // const totalSlides = slides.length;
@@ -37,22 +39,48 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// ZOOM IMAGENES
 
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.transform = 'scale(1.2)';
-                entry.target.style.transition = 'transform 1s ease-in-out';
+                entry.target.style.transition = 'transform 0.7s ease-in-out';
             } else {
                 entry.target.style.transform = 'scale(1)';
             }
         });
     }, {
-        threshold: 0.1 // Este valor determina qué porcentaje de la imagen debe estar visible para activar el zoom.
+        threshold: 0.2 // Este valor determina qué porcentaje de la imagen debe estar visible para activar el zoom.
     });
 
     document.querySelectorAll('.imagenes-inicio img').forEach(img => {
         observer.observe(img);
     });
 });
+
+//TEXTO IZQUIERDA A DERECHA ANIMACION
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-text');
+            } else {
+                entry.target.classList.remove('animate-text');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    const elements = document.querySelectorAll('.main-text h3, .main-sub h3, .main-end h1');
+    elements.forEach(element => observer.observe(element));
+});
+
+
+
+  
+  
+
