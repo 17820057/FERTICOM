@@ -123,12 +123,14 @@ header {
     margin-left: 2em;
     margin-top: 2em;
 }
-.info {
+.about-section {
     width: 55%;
-    border: 2px solid #000;
     border-radius: 8px;
     font-size: 16px;
 }
+/* .info {
+
+} */
 .img__container {
     width: 50%;
     height: auto;
@@ -147,7 +149,6 @@ header {
     background-position: center;
     animation: slide-in-out 4s ease-in-out forwards;
     border-radius: 10px;
-
 }
 @keyframes slide-in-out {
     0%,
@@ -169,18 +170,18 @@ header {
     }
 }
 
-
 .info__title {
+    font-family:"Jockey One", sans-serif;
     text-align: center;
-    font-weight: bolder;
-    font-size: 50px;
+    font-size: 65px;
     color: #31A44B;
-    margin: 1.2em;
+    margin: 0.7em;
 }
 
 .info__p {
+    font-family:"Jockey One", sans-serif;
     font-size: 30px;
-    font-weight: 500;
+    font-weight:500;
     margin: 1em;
     margin-bottom: 0.4em;
     text-align: justify;
@@ -213,8 +214,10 @@ header {
 }
 
 .text {
+    padding-left: 10px;
     font-size: 35px;
     color: #fff;
+    font-family: "Jockey One", sans-serif;
 }
 
 .container {
