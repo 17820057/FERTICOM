@@ -25,6 +25,8 @@
     margin-bottom: 2em;
     margin-top: 1em;
     font-size: 1.4em;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
 }
 .form__group{
     font-weight: 500;
@@ -86,6 +88,8 @@
     margin-top: 2em;
     margin-bottom: 2em;
     cursor: pointer;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
 }
 .form__submit__google{
     width: auto;

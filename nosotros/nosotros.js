@@ -14,13 +14,19 @@ function girarContenedor(element) {
     element.classList.toggle('girado');
 }
 
+const aboutText = "Con varios años de experiencia en el sector agrícola colombiano, somos líderes en soluciones agro sostenibles a nivel nacional e internacional. Nuestro portafolio incluye fertilizantes altamente capacitados. Con destacada instalada y talento humano, nos centramos en ofrecer el mejor paquete tecnológico para la nutrición de calidad en todos los cultivos.";
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    window.addEventListener('scroll', () => {
-        const element = document.querySelector('.slide-in');
-        const position = element.getBoundingClientRect();
-        if (position.top >= 0 && position.bottom <= window.innerHeight) {
-            element.style.animation = 'slide-in 1s forwards';
+document.addEventListener('DOMContentLoaded', function () {
+    const typedTextContainer = document.getElementById('typed-text');
+    let index = 0;
+
+    function typeWriterEffect() {
+        if (index < aboutText.length) {
+            typedTextContainer.innerHTML += aboutText.charAt(index);
+            index++;
+            setTimeout(typeWriterEffect, 30); 
         }
-    });
+    }
+
+    typeWriterEffect();
 });
