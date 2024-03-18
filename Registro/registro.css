@@ -11,14 +11,6 @@
     margin: 0;
     padding: 0;
 }
-.form{
-    padding: 2em;
-    background: white;
-    width: 40%;
-    height: auto;
-    margin-left: auto;
-    margin-right: 0;
-}
 .form__title{
     text-align: center;
     color: #31A44B;
@@ -81,10 +73,13 @@
     border-radius: 0.6em;
     font-weight: 600;
     cursor: pointer;
+    align-self: center;
 }
 .form__pargraph__p{
+    align-content: center;
     color: #31A44B;
     font-weight: 600;
+    align-self: center;
     margin-top: 2em;
     margin-bottom: 2em;
     cursor: pointer;
@@ -116,4 +111,18 @@
     height: 2em;
     margin-left: 1em;
 }
-
+.formulario{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: white;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+}
+.social_auth{
+    align-items: center;
+}
