@@ -2,24 +2,20 @@
 
 const sliderInicio = document.querySelector('.sliderinicio');
 const slides = sliderInicio.querySelectorAll('li');
-// const totalSlides = slides.length;
 let currentIndex = 0;
 
 function showSlide(index) {
     slides.forEach(slide => {
         slide.style.opacity = 0;
         slide.style.zIndex = 0;
-        // slide.style.display = 'none';
     });
 
     slides[index].style.opacity = 1;
     slides[index].style.zIndex = 1;
-    // slides[index].style.display = 'block';
 }
 
 function nextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
-    // currentIndex = (currentIndex + 1) % totalSlides;
     showSlide(currentIndex);
 }
 
@@ -80,6 +76,73 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// video corporativo
+
+const video = document.getElementById('promo-video');
+const button = document.querySelector('.video-button');
+const durationDisplay = document.querySelector('.video-duration');
+
+// Función para actualizar la duración mostrada
+function updateDuration() {
+    const seconds = Math.ceil(video.duration - video.currentTime);
+    const minutes = Math.floor(seconds / 60);
+    durationDisplay.textContent = `${minutes}:${(seconds % 60).toString().padStart(2, '0')}`;
+}
+
+// Función para alternar la reproducción y pausa del video
+function togglePlay() {
+    if (video.paused) {
+        video.play();
+        button.textContent = 'Pausar ∥';
+    } else {
+        video.pause();
+        button.textContent = 'Mirar ►';
+    }
+}
+
+// Agregamos 'loadedmetadata' para establecer la duración inicial correctamente
+video.addEventListener('loadedmetadata', updateDuration);
+
+// Eventos para controlar los cambios en el botón y la duración
+video.addEventListener('play', () => {
+    button.textContent = 'Pausar ∥';
+});
+
+video.addEventListener('pause', () => {
+    button.textContent = 'Mirar ►';
+});
+
+video.addEventListener('timeupdate', updateDuration);
+
+// Si el video ya está cargado, actualizamos la duración directamente
+if (video.readyState >= 2) {
+    updateDuration();
+}
+
+
+// SLIDER AUTOMATICO VERTICAL FINAL INICIO
+
+// const sliderVertical = document.querySelector('.slider-vertical');
+// const slides = sliderInicio.querySelectorAll('li');
+// let currentIndex = 0;
+
+// function showSlide(index) {
+//     slides.forEach(slide => {
+//         slide.style.opacity = 0;
+//         slide.style.zIndex = 0;
+//     });
+
+//     slides[index].style.opacity = 1;
+//     slides[index].style.zIndex = 1;
+// }
+
+// function nextSlide() {
+//     currentIndex = (currentIndex + 1) % slides.length;
+//     showSlide(currentIndex);
+// }
+
+// showSlide(currentIndex);
+// setInterval(nextSlide, 3000);
 
   
   

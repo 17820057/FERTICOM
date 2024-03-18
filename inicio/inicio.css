@@ -327,10 +327,119 @@ body {
     text-align: center;
 }
 
+/* VIDEO CORPORATIVO */
 
 
+.video-container {
+    position: relative;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    top: 3em;
+}
+
+video#promo-video {
+    width: 100%;
+    height: auto;
+}
+
+.video-duration {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.video-button {
+    position: absolute;
+    background-color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    bottom: 1%;
+    left: 0;
+    transform: translateY(-50%, -50%);
+    padding: 10px 20px;
+}
 
 
+.linea-inicio {
+    height: 4px; 
+    width: 80%;
+    background-color: #31A44B; 
+    margin-top: 8em;
+    margin-left: 10%;
+}
+
+/* SLIDER FINAL INICION VERTICAL */
+
+
+.slider-vertical {
+    position: relative;
+    height: 300px; /* Ajusta esto al tamaño de tus imágenes */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-vertical .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
+  }
+  
+  .slider-vertical .slide:first-child {
+    transform: translateY(0);
+  }
+  
+/* .slider-vertical {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: -7%;
+    z-index: 1;
+}
+
+.slider-vertical ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.slider-vertical ul li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.slider-vertical ul li {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider-vertical ul li:first-child {
+    opacity: 1;
+} */
 
 
 
