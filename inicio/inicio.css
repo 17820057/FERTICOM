@@ -327,7 +327,46 @@ body {
     text-align: center;
 }
 
+/* VIDEO CORPORATIVO */
 
+
+.video-container {
+    position: relative;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    top: 3em;
+}
+
+video#promo-video {
+    width: 100%;
+    height: auto;
+}
+
+.video-duration {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.video-button {
+    position: absolute;
+    background-color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    bottom: 1%;
+    left: 0;
+    transform: translateY(-50%, -50%);
+    padding: 10px 20px;
+}
 
 
 
