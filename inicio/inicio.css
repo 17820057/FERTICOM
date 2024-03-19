@@ -381,24 +381,25 @@ video#promo-video {
 
 
 .slider-vertical {
+    width: 100%;
+    height: 300px; /* Ajusta a la altura deseada */
     position: relative;
-    height: 300px; /* Ajusta esto al tamaño de tus imágenes */
     overflow: hidden;
-    position: relative;
   }
   
   .slider-vertical .slide {
-    position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    transition: transform 0.5s ease-in-out;
-    transform: translateY(100%);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: top 0.5s;
   }
   
-  .slider-vertical .slide:first-child {
-    transform: translateY(0);
+  .slider-vertical .slide.active-slide {
+    top: 0;
   }
   
 /* .slider-vertical {
