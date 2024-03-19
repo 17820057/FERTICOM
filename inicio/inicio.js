@@ -122,19 +122,26 @@ if (video.readyState >= 2) {
 
 // SLIDER AUTOMATICO VERTICAL FINAL INICIO
 
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.slider-vertical .slide');
-    let currentSlide = 0;
-  
-    function goToNextSlide() {
-      slides[currentSlide].classList.remove('active-slide');
-      currentSlide = (currentSlide + 1) % slides.length;
-      slides[currentSlide].classList.add('active-slide');
-    }
-  
-    slides[currentSlide].classList.add('active-slide');
-    setInterval(goToNextSlide, 3000);
-  });
+const sliderVertical = document.querySelector('.slider-vertical');
+const slidesVertical = sliderVertical.querySelectorAll('li');
+let currentVerticalIndex = 0;
+
+function showVerticalSlide(index) {
+    slidesVertical.forEach(slide => {
+        slide.style.top = '100%'; // Todas las diapositivas se mueven hacia abajo
+    });
+
+    slidesVertical[index].style.top = '0'; // La diapositiva activa se mueve hacia arriba
+}
+
+function nextVerticalSlide() {
+    currentVerticalIndex = (currentVerticalIndex + 1) % slidesVertical.length;
+    showVerticalSlide(currentVerticalIndex);
+}
+
+showVerticalSlide(currentVerticalIndex);
+setInterval(nextVerticalSlide, 3000);
+
   
 
   
