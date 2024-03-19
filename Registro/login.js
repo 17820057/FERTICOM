@@ -1,3 +1,21 @@
+
+import { ManageAccount } from './firebaseconect.js';
+
+document.getElementById("googlelogin").addEventListener("click", (event) => {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const account = new ManageAccount();
+    account.authenticate(email, password);
+
+});
+
+console.log('Formulario de Inicio de Sesión');
+
+
+
 // document.getElementById('googlelogin').addEventListener('click', function () {
 //     var provider = new firebase.auth.GoogleAuthProvider();
 //     // Cambia de signInWithPopup a signInWithRedirect
@@ -32,31 +50,25 @@
 // });
 
 
-
-
-
-
-
-
-document.getElementById('googlelogin').addEventListener('click', function () {
-    var provider = new firebase.auth.GoogleAuthProvider();
-    firebase.auth()
-        .signInWithPopup(provider)
-        .then((result) => {
-            // Esto te da un token de acceso de Google. Puedes usarlo para acceder a la API de Google.
-            var token = result.credential.accessToken;
-            // La información del usuario logueado.
-            var user = result.user;
-            // ...
-        }).catch((error) => {
-            // Maneja los errores aquí.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // El correo electrónico de la cuenta del usuario utilizado.
-            var email = error.email;
-            // El tipo de firebase.auth.AuthCredential que fue utilizado.
-            var credential = error.credential;
-            // ...
-        });
-});
+// document.getElementById('googlelogin').addEventListener('click', function () {
+//     var provider = new firebase.auth.GoogleAuthProvider();
+//     firebase.auth()
+//         .signInWithPopup(provider)
+//         .then((result) => {
+//             // Esto te da un token de acceso de Google. Puedes usarlo para acceder a la API de Google.
+//             var token = result.credential.accessToken;
+//             // La información del usuario logueado.
+//             var user = result.user;
+//             // ...
+//         }).catch((error) => {
+//             // Maneja los errores aquí.
+//             var errorCode = error.code;
+//             var errorMessage = error.message;
+//             // El correo electrónico de la cuenta del usuario utilizado.
+//             var email = error.email;
+//             // El tipo de firebase.auth.AuthCredential que fue utilizado.
+//             var credential = error.credential;
+//             // ...
+//         });
+// });
 
