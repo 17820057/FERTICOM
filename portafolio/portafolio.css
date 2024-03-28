@@ -203,3 +203,181 @@ background-color: white;
     color: #000000;
     margin-top: 2em;
 }
+
+/*SLIDER INFINITO FINAL*/
+
+
+.slider-final {
+    overflow: hidden;
+    margin-top: 4em;
+  }
+  
+  .slider {
+    display: flex;
+    width: calc(100% * 7);
+    animation: scroll 30s linear infinite;
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% / 7 * (7 - visible en pantalla))); }
+  }
+  
+  /* Estilos de las tarjetas */
+  .slide {
+    width: 100% / 7;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+    margin: 2em;
+  }
+
+  .slide p {
+    display: flex;
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    font-family:"Jockey One", sans-serif;
+
+  }
+  
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+/* BOTON INFORMACION */
+
+  .boton-descubre {
+    display: flex;
+    background-color: black;
+    border-radius: 50px;
+    margin-left: 44em;
+    margin-top: 5em;
+    margin-bottom: 4em;
+    overflow: hidden;
+    transform: transform 0.3s ease-in-out;
+}
+
+.boton-descubre a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2vh;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+.boton-descubre:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    margin: 0;
+    padding: 0;
+    background: #404040;
+}
+
+.container__footer {
+    display: flex;
+    flex-direction: block;
+}
+
+.footer__logos {
+    margin-top: 2em;
+    margin-left: 2em;
+    align-items: center;
+
+}
+
+.footer__ferticom {
+    margin-top: 1px;
+    width: 210px;
+    height: 70px;
+}
+
+.footer__redes {
+    text-align: center;
+    margin-top: 1em;
+    flex-direction: row;
+    align-items: center;
+    display: block;
+}
+
+.icons {
+    width: 40px;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__vinculos__i,
+.footer__vinculos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.footer__vinculos__i {
+    border-right: 3px solid #2E2E2E;
+}
+
+.v__Ayuda,
+.v__mercado,
+.v__Eventos,
+.vi__mercado,
+.vin__mercado,
+.vi__Ayuda {
+    color: #fff;
+    margin-right: 6em;
+    margin-left: 6em;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.v__Ayuda,
+.v__mercado,
+.v__Eventos {
+    margin-top: 0.8em;
+    font-weight: 600;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #fff;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 15px;
+}
