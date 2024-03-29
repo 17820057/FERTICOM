@@ -161,7 +161,9 @@ header {
     padding: 0;
     background: #404040;
 }
-
+.footer:hover {
+    background-color: #31A44B;
+}
 .container__footer {
     display: flex;
     flex-direction: block;
