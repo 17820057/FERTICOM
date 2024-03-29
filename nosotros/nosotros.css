@@ -131,6 +131,7 @@ header {
 /* .info {
 
 } */
+
 .img__container {
     width: 50%;
     height: auto;
@@ -142,32 +143,17 @@ header {
 .slide-in-out {
     width: 90%;
     margin-left: 100%;
-    opacity: 1;
+    opacity: 0; 
     background-image: url('../recursos/nosotros\ 2.jpg');
     height: 500px;
     background-size: cover;
     background-position: center;
-    animation: slide-in-out 4s ease-in-out forwards;
     border-radius: 10px;
+    transition: margin-left 2s ease-in-out, opacity 2s ease-in-out;
 }
-@keyframes slide-in-out {
-    0%,
-    100% {
-        margin-left: 0;
-        opacity: 1;
-    }
-    25% {
-        margin-left: 0;
-        opacity: 1;
-    }
-    50% {
-        margin-left: 100%;  
-        opacity: 0;
-    }
-    75% {
-        margin-left: 100%;
-        opacity: 0;
-    }
+.start-animation {
+    margin-left: 0;
+    opacity: 1;
 }
 
 .info__title {
@@ -275,7 +261,9 @@ header {
     display: flex;
     flex-direction: block;
 }
-
+.footer:hover {
+    background-color: #31A44B;
+}
 .footer__logos {
     margin-top: 2em;
     margin-left: 2em;
