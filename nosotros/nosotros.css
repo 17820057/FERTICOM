@@ -57,6 +57,7 @@ header {
     padding: 10px 15px;
     background-color: black;
 }
+
 .boton-ccuenta,
 .inicio-sesion {
     display: inline-block;
@@ -65,18 +66,22 @@ header {
     text-decoration: none;
     color: white;
 }
+
 .crea-sesion {
     background-color: white;
 }
+
 .inicio-sesion {
     margin-right: 10px;
     color: black;
     font-weight: bold;
     background-color: white;
 }
+
 .bx {
     background-color: white;
 }
+
 .icono-tienda {
     background-color: white;
     text-decoration: none;
@@ -87,10 +92,12 @@ header {
     right: 50px;
     top: 20px;
 }
+
 .icono-tienda a {
     color: black;
     background-color: white;
 }
+
 .seccion-fondo {
     margin: 0;
     padding: 0;
@@ -101,6 +108,7 @@ header {
     background-position: left;
     background-repeat: no-repeat;
 }
+
 .title__pg {
     position: absolute;
     justify-content: center;
@@ -109,12 +117,14 @@ header {
     width: 100%;
 
 }
+
 .title__pg h2 {
     align-items: center;
     text-align: center;
     align-self: center;
     font-size: 60px;
 }
+
 /* BODY */
 .contenedor {
     display: flex;
@@ -123,11 +133,13 @@ header {
     margin-left: 2em;
     margin-top: 2em;
 }
+
 .about-section {
     width: 55%;
     border-radius: 8px;
     font-size: 16px;
 }
+
 /* .info {
 
 } */
@@ -140,10 +152,11 @@ header {
     justify-content: center;
     overflow: hidden;
 }
+
 .slide-in-out {
     width: 90%;
     margin-left: 100%;
-    opacity: 0; 
+    opacity: 0;
     background-image: url('../recursos/nosotros\ 2.jpg');
     height: 500px;
     background-size: cover;
@@ -151,13 +164,14 @@ header {
     border-radius: 10px;
     transition: margin-left 2s ease-in-out, opacity 2s ease-in-out;
 }
+
 .start-animation {
     margin-left: 0;
     opacity: 1;
 }
 
 .info__title {
-    font-family:"Jockey One", sans-serif;
+    font-family: "Jockey One", sans-serif;
     text-align: center;
     font-size: 65px;
     color: #31A44B;
@@ -165,9 +179,9 @@ header {
 }
 
 .info__p {
-    font-family:"Jockey One", sans-serif;
+    font-family: "Jockey One", sans-serif;
     font-size: 30px;
-    font-weight:500;
+    font-weight: 500;
     margin: 1em;
     margin-bottom: 0.4em;
     text-align: justify;
@@ -177,7 +191,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1em;
+    padding: 2em;
 }
 
 .logros,
@@ -261,9 +275,11 @@ header {
     display: flex;
     flex-direction: block;
 }
+
 .footer:hover {
     background-color: #31A44B;
 }
+
 .footer__logos {
     margin-top: 2em;
     margin-left: 2em;
@@ -334,4 +350,38 @@ header {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     font-size: 15px;
+}
+
+
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    .footer{
+        width:100% ;
+    }
+    .history{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__redes{
+        margin-left: 1em;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 360px) {
 }
