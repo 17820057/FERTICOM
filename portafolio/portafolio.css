@@ -210,26 +210,32 @@ background-color: white;
 .slider-final {
     overflow: hidden;
     margin-top: 4em;
-  }
+    width: 100%; 
+}
   
-  .slider {
+.slider {
     display: flex;
-    width: calc(100% * 7);
-    animation: scroll 30s linear infinite;
-  }
-  
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(calc(-100% / 7 * (7 - visible en pantalla))); }
-  }
-  
-  /* Estilos de las tarjetas */
-  .slide {
-    width: 100% / 7;
+    gap: 1%;
+    animation: scroll 25s linear infinite;
+}
+
+.slide {
+    flex: 0 0 calc((100% / 7) - 1%);
     transition: transform 0.5s ease-in-out;
     cursor: pointer;
-    margin: 2em;
-  }
+}
+  
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% / 7 * 9)); } 
+}
+
+
+.slide8 {
+    /* height: 45%; */
+    border-radius: 1vw;
+    filter: blur(1px);
+}
 
   .slide p {
     display: flex;
