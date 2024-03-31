@@ -161,7 +161,13 @@ header {
     padding: 0;
     background: #404040;
 }
+<<<<<<< HEAD
 
+=======
+/* .footer:hover {
+    background-color: #31A44B;
+} */
+>>>>>>> 78110013a26d1abce927b97a71d42a78225afede
 .container__footer {
     display: flex;
     flex-direction: block;

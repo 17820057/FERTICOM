@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 current++; // Mueve al siguiente testimonio
                 startSlide(); // Repite el proceso
             }, 900); // Espera que termine la transición de salida
-        }, 5000); // Tiempo visible de cada testimonio
+        }, 8000); // Tiempo visible de cada testimonio
     }
 
     startSlide(); // Inicia la función del carrusel
