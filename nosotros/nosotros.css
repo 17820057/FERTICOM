@@ -261,9 +261,9 @@ header {
     display: flex;
     flex-direction: block;
 }
-.footer:hover {
+/* .footer:hover {
     background-color: #31A44B;
-}
+} */
 .footer__logos {
     margin-top: 2em;
     margin-left: 2em;
