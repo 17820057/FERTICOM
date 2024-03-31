@@ -294,9 +294,6 @@ select {
     padding: 0;
     background: #404040;
 }
-/* .footer:hover {
-    background-color: #31A44B;
-} */
 .container {
     display: flex;
     flex-direction: block;
