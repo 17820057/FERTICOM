@@ -270,23 +270,15 @@ header {
     padding: 0;
     background: #404040;
 }
-
-.container__footer {
+.container {
     display: flex;
     flex-direction: block;
 }
-<<<<<<< HEAD
 
-=======
-/* .footer:hover {
-    background-color: #31A44B;
-} */
->>>>>>> 78110013a26d1abce927b97a71d42a78225afede
 .footer__logos {
     margin-top: 2em;
     margin-left: 2em;
     align-items: center;
-
 }
 
 .footer__ferticom {
@@ -355,7 +347,8 @@ header {
 }
 
 
-@media only screen and (max-width: 1320px) {
+
+/* @media only screen and (max-width: 1320px) {
     header {
         padding: 0 50px;
     }
@@ -382,4 +375,4 @@ header {
 .footer__redes{
     margin-left: 1em;
     
-}
+} */

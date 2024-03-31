@@ -335,13 +335,7 @@ background-color: white;
     padding: 0;
     background: #404040;
 }
-<<<<<<< HEAD
-=======
-/* .footer:hover {
-    background-color: #31A44B;
-} */
->>>>>>> 78110013a26d1abce927b97a71d42a78225afede
-.container__footer {
+.container {
     display: flex;
     flex-direction: block;
 }
@@ -350,7 +344,6 @@ background-color: white;
     margin-top: 2em;
     margin-left: 2em;
     align-items: center;
-
 }
 
 .footer__ferticom {
@@ -416,4 +409,4 @@ background-color: white;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     font-size: 15px;
-}
+}   
