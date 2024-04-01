@@ -1,16 +1,17 @@
-// ROTAR LOS CONTENEDORES(VISION, MISI0N Y LOGROS)
-function girarContenedor(element) {
-    var frente = element.querySelector('.frente');
-    var reverso = element.querySelector('.reverso');
+// // ROTAR LOS CONTENEDORES(VISION, MISI0N Y LOGROS)
+// function girarContenedor(element) {
+//     var frente = element.querySelector('.frente');
+//     var reverso = element.querySelector('.reverso');
 
-    if (frente.style.transform === "rotateY(180deg)") {
-        frente.style.transform = "rotateY(0deg)";
-        reverso.style.transform = "rotateY(180deg)";
-    } else {
-        frente.style.transform = "rotateY(180deg)";
-        reverso.style.transform = "rotateY(0deg)";
-    }
-}
+//     if (frente.style.transform === "rotateY(180deg)") {
+//         frente.style.transform = "rotateY(0deg)";
+//         reverso.style.transform = "rotateY(180deg)";
+//     } else {
+//         frente.style.transform = "rotateY(180deg)";
+//         reverso.style.transform = "rotateY(0deg)";
+//     }
+// }
+
 function girarContenedor(element) {
     element.classList.toggle('girado');
 }

@@ -5,13 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Previene el envío estándar del formulario
 
         // Enviar el formulario usando EmailJS
-        emailjs.sendForm('service_rdyc91r', 'template_nq33e6z', this)
+        emailjs.sendForm('service_3jn0d6x', 'template_qtktpdt', this)
             .then(function() {
-                // alert('Mensaje enviado con éxito!');
-
                 // Limpia el formulario después del envío exitoso
                 document.getElementById('mi-formulario').reset();
-                
+
                 // Recarga la página
                 window.location.reload();
             }, function(error) {

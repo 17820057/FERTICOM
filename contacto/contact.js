@@ -26,18 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     const testimonials = document.querySelectorAll('.testimonials');
     let current = 0; // Índice del testimonio actual
-
     // Función para iniciar el carrusel
     function startSlide() {
         testimonials.forEach((testimonial, index) => {
             testimonial.style.display = 'none'; // Oculta todos los testimonios
         });
-
         // Cicla a través de los testimonios
         if (current >= testimonials.length) {
             current = 0; // Vuelve al inicio si se ha llegado al final
         }
-
         // Prepara el próximo testimonio para la transición
         testimonials[current].style.display = 'block'; // Muestra el testimonio actual
         testimonials[current].classList.add('active'); // Agrega la clase 'active'
