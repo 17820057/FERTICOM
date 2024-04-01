@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="contact.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="./contact.js"></script>
+    <!-- EmailJS Library -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- script manejo del formulario -->
+    <script src="formMailer.js"></script>
+
 </head>
 <div>
     <div class="seccion-fondo">
@@ -167,24 +172,24 @@
         </div>
     </div>
     <div class="registro">
-        <form action="" class="form">
+        <form id="mi-formulario" action="post" class="form">
             <div class="form__container">
                 <div class="form__group">
-                    <label for="Nombre de usuario">Nombre completo</label>
-                    <input type="text" name="nombre" id="nombre" class="form__imput" placeholder="Nombre completo" />
+                    <label for="name">Nombre completo</label>
+                    <input type="text" name="name" id="name" class="form__imput" placeholder="Nombre completo" />
                 </div>
                 <div class="form__group">
-                    <label for="correo electrónico ">Correo electrónico</label>
-                    <input type="email" name="correo" id="correo" class="form__imput"
+                    <label for="email ">Correo electrónico</label>
+                    <input type="email" name="email" id="email" class="form__imput"
                         placeholder="Correo electrónico" />
                 </div>
                 <div class="form__group">
-                    <label for="Teléfono">Teléfono</label>
-                    <input type="tel" name="Teléfono" id="Teléfono" class="form__imput" placeholder="Teléfono" />
+                    <label for="phone">Teléfono</label>
+                    <input type="tel" name="phone" id="phone" class="form__imput" placeholder="Teléfono" />
                 </div>
                 <div class="form__group">
-                    <label for="Asunto del mensaje">Asunto del mensaje</label>
-                    <select class="form__imput" id="seleccion" name="opcion">
+                    <label for="seleccion">Asunto del mensaje</label>
+                    <select class="form__imput" id="seleccion" name="seleccion">
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="Asesoria">Asesoria</option>
                         <option value="Cotizaciones">Cotizaciones</option>
@@ -196,7 +201,7 @@
                     <input type="text" name="Comentario" id="Comentario" class="form__imput" placeholder="Comentario" />
                 </div>
                 <div class="form__button-container">
-                    <button type="submit" class="form__submit">
+                    <button  type="submit" class="form__submit">
                         <span class="form__submit__text">Enviar</span>
                     </button>
                 </div>
