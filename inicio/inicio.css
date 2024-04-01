@@ -424,16 +424,17 @@ video#promo-video {
     right: 40%;
     align-items: center;
     justify-content: start;
+    flex-direction: column;
     padding: 0 40px;
+    margin-top: 3em;
 }
 
 .descripcion-final {
     color: black;
     /* flex-basis: 50%; */
-    font-size: 23px;
+    font-size: 20px;
     margin-left: 2em;
     font-weight: bold;
-    padding-left: 1em;
     justify-content: flex-end;
 }
 
@@ -444,7 +445,25 @@ video#promo-video {
     width: 100%;
 }
 
+.desc-final2, .desc-final3, .desc-final4, .desc-final5 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: flex-start;
+}
 
+.final1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8em;
+    justify-content: flex-start;
+    margin-bottom: 1em;
+
+}
+
+.final1 > p {
+    margin-left: 2em;
+}
 
 
 
