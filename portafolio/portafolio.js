@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   };
 
-  // Intervalo para mover el carrusel cada 3 segundos
+  // mover el carrusel cada 3 segundos
   setInterval(() => {
       moveSlider();
   }, 3000);
