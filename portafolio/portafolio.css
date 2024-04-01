@@ -334,10 +334,12 @@ background-color: white;
     margin: 0;
     padding: 0;
     background: #404040;
+    width: 100%;
 }
-.container {
+.container__footer {
     display: flex;
     flex-direction: block;
+    width: 100%;
 }
 
 .footer__logos {
