@@ -168,7 +168,7 @@ header {
 
 .footer__logos {
     margin-top: 2em;
-    margin-left: 2em;
+    margin-left: 8em;
     align-items: center;
 }
 
@@ -195,6 +195,7 @@ header {
 .footer__menu {
     display: flex;
     flex-direction: row;
+    margin-left: 16em;
 }
 
 .footer__vinculos__i,
