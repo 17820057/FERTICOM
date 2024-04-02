@@ -28,14 +28,34 @@ document.getElementById('miFormulario').addEventListener('submit', function(e) {
         contraseña: contraseña
     };
 
-    fetch('/registrar', {
+    // fetch('http://localhost:5000/registrar', { ... });
+
+
+    // fetch('/registrar', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify(formData),
+    // })
+
+    const baseUrl = 'http://localhost:5000';
+
+    fetch(baseUrl + '/registrar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
     })
-    .then(response => response.json())
+
+    // .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
     .then(data => {
         alert(data.message);
     })

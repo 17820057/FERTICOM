@@ -28,6 +28,12 @@
             </a>
         </div>
 
+        <div class="hamburguer">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
         <nav class="nav-bar">
             <ul>
                 <li><a href="../inicio/inicio.html">INICIO</a></li>
@@ -38,7 +44,7 @@
         </nav>
 
         <div class="crea-sesion">
-            <a href="../Registro/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
+            <a href="../public/registrate.html" target="_self" class="boton-ccuenta">Crear Cuenta</a>
             <a href="../Registro/iniciarse.html" class="inicio-sesion">Iniciar sesión</a>
 
             <div class="icono-tienda">
@@ -50,6 +56,14 @@
 
 
     </header>
+
+    <script>
+        hamburguer = document.querySelector(".hamburguer");
+        hamburguer.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
 
     <div class="sliderinicio">
         <ul>

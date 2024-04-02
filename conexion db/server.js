@@ -8,6 +8,12 @@ const { body, validationResult } = require('express-validator');
 const app = express();
 const port = 5000;
 
+const cors = require('cors');
+app.use(cors());
+
+app.use(express.static('public'));
+
+
 app.use(express.json());
 
 // Validación y saneamiento de los datos de entrada para el registro de usuarios
@@ -73,8 +79,10 @@ app.post('/productos', productValidationRules, (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${5000}`);
+    console.log(`Servidor corriendo en http://localhost:${port}`);
 });
+
+
 
 
 // const express = require('express');

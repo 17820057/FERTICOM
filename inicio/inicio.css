@@ -41,8 +41,13 @@ body {
     font-size: 15px;
     font-weight: bold;
     padding: 10px 25px;
-    border-radius: 50px;
+    border-radius: 20px;
     background-color: white;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background: #8225F7;
 }
 
 .boton-ccuenta {
@@ -469,50 +474,6 @@ video#promo-video {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 .footer {
     margin: 0;
@@ -597,3 +558,72 @@ video#promo-video {
     padding-bottom: 1.5em;
     font-size: 15px;
 }
+
+
+
+/* Estilos Base */
+
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburguer .line {
+        width: 30px;
+        height: 3px;
+        background: #31A44B;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none; 
+    }
+    .menu-hamburguesa {
+        display: block; 
+    }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 360px) {
+}
+    
