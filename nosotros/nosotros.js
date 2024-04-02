@@ -1,26 +1,26 @@
-// // ROTAR LOS CONTENEDORES(VISION, MISI0N Y LOGROS)
-// function girarContenedor(element) {
-//     var frente = element.querySelector('.frente');
-//     var reverso = element.querySelector('.reverso');
+// FUNCION PARA GIRAR LOS CONTENEDORES.
+document.addEventListener("DOMContentLoaded", function() {
+    var containers = document.querySelectorAll('.container');
 
-//     if (frente.style.transform === "rotateY(180deg)") {
-//         frente.style.transform = "rotateY(0deg)";
-//         reverso.style.transform = "rotateY(180deg)";
-//     } else {
-//         frente.style.transform = "rotateY(180deg)";
-//         reverso.style.transform = "rotateY(0deg)";
-//     }
-// }
+    containers.forEach(function(container) {
+        container.addEventListener('mouseenter', function() {
+            this.querySelector('.carafrente').style.transform = "rotateY(-180deg)";
+            this.querySelector('.carareverso').style.transform = "rotateY(0deg)";
+        });
 
-function girarContenedor(element) {
-    element.classList.toggle('girado');
-}
+        container.addEventListener('mouseleave', function() {
+            this.querySelector('.carafrente').style.transform = "rotateY(0deg)";
+            this.querySelector('.carareverso').style.transform = "rotateY(180deg)";
+        });
+    });
+});
+
 // FUNCION PARA ESCRIBIR EN LA PAGINA EL TEXTO.
 const aboutText = "Con varios años de experiencia en el sector agrícola colombiano, somos líderes en soluciones agro sostenibles a nivel nacional e internacional. Nuestro portafolio incluye fertilizantes altamente capacitados. Con destacada instalada y talento humano, nos centramos en ofrecer el mejor paquete tecnológico para la nutrición de calidad en todos los cultivos.";
 document.addEventListener('DOMContentLoaded', () => {
     const typedTextContainer = document.getElementById('typed-text');
     let index = 0;
-    let typingSpeed = 8;
+    let typingSpeed = 7;
     // Reinicia y ejecuta el efecto de máquina de escribir
     function resetAndTypeWriterEffect() {
         typedTextContainer.innerHTML = ''; 
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 resetAndTypeWriterEffect();
             }
         });
-    }, { threshold: 0.3 });
+    }, { threshold: 0.9 });
     observer.observe(typedTextContainer);
 });
 
