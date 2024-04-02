@@ -6,21 +6,21 @@ document.getElementById('miFormulario').addEventListener('submit', function(e) {
     const correo = document.getElementById('correo').value;
     const contraseña = document.getElementById('contraseña').value;
 
-    if (nombre.trim() === '') {
-        alert('Por favor, ingresa tu nombre.');
-        return;
-    }
+    // if (nombre.trim() === '') {
+    //     alert('Por favor, ingresa tu nombre.');
+    //     return;
+    // }
 
-    const correoValido = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo);
-    if (!correoValido) {
-        alert('Por favor, ingresa un correo electrónico válido.');
-        return;
-    }
+    // const correoValido = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo);
+    // if (!correoValido) {
+    //     alert('Por favor, ingresa un correo electrónico válido.');
+    //     return;
+    // }
 
-    if (contraseña.length < 6) {
-        alert('La contraseña debe tener al menos 6 caracteres.');
-        return;
-    }
+    // if (contraseña.length < 6) {
+    //     alert('La contraseña debe tener al menos 6 caracteres.');
+    //     return;
+    // }
 
     const formData = {
         nombre: nombre,
@@ -35,9 +35,9 @@ document.getElementById('miFormulario').addEventListener('submit', function(e) {
         },
         body: JSON.stringify(formData),
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
-        alert(data);
+        alert(data.message);
     })
     .catch((error) => {
         console.error('Error:', error);
