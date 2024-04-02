@@ -69,7 +69,17 @@
 
         </div>
     </div>
-    <script src="app.js"></script>
+    <!-- Firebase App (la parte central de Firebase JS SDK) es siempre requerida y debe ser listada primero -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- Añade Firebase products que necesitas en tu app -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    
+    <!-- Configuración de Firebase -->
+    <script src="firebase-config.js"></script>
+    
+    <!-- Tu script personalizado -->
+    <script src="auth.js"></script>
 </body>
 
 </html>
