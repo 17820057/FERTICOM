@@ -142,6 +142,7 @@ header {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #ffff;
+    /* background-color: #ECECEC; */
     padding: 0 10px;
     padding-left: 2em;
 }
@@ -161,9 +162,10 @@ header {
     padding: 0;
     background: #404040;
 }
-.container {
+.container__footer {
     display: flex;
     flex-direction: block;
+
 }
 
 .footer__logos {
