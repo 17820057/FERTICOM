@@ -1,19 +1,3 @@
-// FUNCION PARA GIRAR LOS CONTENEDORES.
-document.addEventListener("DOMContentLoaded", function() {
-    var containers = document.querySelectorAll('.container');
-
-    containers.forEach(function(container) {
-        container.addEventListener('mouseenter', function() {
-            this.querySelector('.carafrente').style.transform = "rotateY(-180deg)";
-            this.querySelector('.carareverso').style.transform = "rotateY(0deg)";
-        });
-
-        container.addEventListener('mouseleave', function() {
-            this.querySelector('.carafrente').style.transform = "rotateY(0deg)";
-            this.querySelector('.carareverso').style.transform = "rotateY(180deg)";
-        });
-    });
-});
 
 // FUNCION PARA ESCRIBIR EN LA PAGINA EL TEXTO.
 const aboutText = "Con varios años de experiencia en el sector agrícola colombiano, somos líderes en soluciones agro sostenibles a nivel nacional e internacional. Nuestro portafolio incluye fertilizantes altamente capacitados. Con destacada instalada y talento humano, nos centramos en ofrecer el mejor paquete tecnológico para la nutrición de calidad en todos los cultivos.";
@@ -62,5 +46,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const imageContainer = document.querySelector('.slide-in-out');
     observer.observe(imageContainer);
+});
+
+// FUNCION PARA GIRAR LOS CONTENEDORES.
+document.addEventListener("DOMContentLoaded", function() {
+    var containers = document.querySelectorAll('.container');
+
+    containers.forEach(function(container) {
+        container.addEventListener('mouseenter', function() {
+            this.querySelector('.carafrente').style.transform = "rotateY(-180deg)";
+            this.querySelector('.carareverso').style.transform = "rotateY(0deg)";
+        });
+
+        container.addEventListener('mouseleave', function() {
+            this.querySelector('.carafrente').style.transform = "rotateY(0deg)";
+            this.querySelector('.carareverso').style.transform = "rotateY(180deg)";
+        });
+    });
 });
 

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Añade la clase 'zoom-activo' si el elemento entra en la pantalla
                 entry.target.classList.add('zoom-activo');
             } else {
-                // Opcional: remueve la clase si el elemento sale de la pantalla
+                //+remueve la clase si el elemento sale de la pantalla
                 entry.target.classList.remove('zoom-activo');
             }
         });
