@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("23wfvt3dw5q7Kjkwl"); // Tu User ID de EmailJS aquí
+    emailjs.init("uqD05B0Xi-DD3TVZY"); // Tu User ID de EmailJS aquí
 
     document.getElementById('mi-formulario').addEventListener('submit', function(event) {
         event.preventDefault(); // Previene el envío estándar del formulario
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Recarga la página
                 window.location.reload();
             }, function(error) {
-                // alert('Falló el envío del mensaje: ' + JSON.stringify(error));
+                alert('Falló el envío del mensaje: ' + JSON.stringify(error));
             });
     });
 });
