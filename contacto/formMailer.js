@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Previene el envío estándar del formulario
 
         // Enviar el formulario usando EmailJS
-        emailjs.sendForm('service_3jn0d6x', 'template_fej6kdo', this)
+        emailjs.sendForm('service_766m0s2', 'template_7m9y7uc', this)
             .then(function() {
                 // Limpia el formulario después del envío exitoso
                 document.getElementById('mi-formulario').reset();
