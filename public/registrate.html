@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="registro.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 
@@ -60,16 +61,24 @@
 
             </form>
             <div class="social_auth">
+                <button id="googlelogin" class="form__submit__google" onclick="googleSignIn()">
+                    <span class="form__submit__icon"></span>
+                    <span class="form__submit__text">Continuar con Google</span>
+                </button>
+            </div>
+            
+            <!-- <div class="social_auth">
 
                 <button id="googlelogin" class="form__submit__google">
                     <span class="form__submit__icon"></span>
                     <span class="form__submit__text">Continuar con Google</span>
                 </button>
-            </div>
+            </div> -->
 
         </div>
     </div>
     <script src="../public/app.js"></script>
+    <script src="../contacto/contact.js"></script>
 </body>
 
 </html>
