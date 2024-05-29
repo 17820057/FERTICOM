@@ -96,6 +96,8 @@
 
 
                 googlelogin.addEventListener('click', (e) => {
+                    signInWithRedirect(auth, provider);
+
                     getRedirectResult(auth)
                             .then((result) => {
                                 // This gives you a Google Access Token. You can use it to access Google APIs.
@@ -104,6 +106,12 @@
 
                                 // The signed-in user info.
                                 const user = result.user;
+
+                                // name = displayName
+                                // email = email
+                                // phone = photoURL
+
+                                alert(user.displayName);
                                 // IdP data available using getAdditionalUserInfo(result)
                                 // ...
                             }).catch((error) => {
