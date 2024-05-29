@@ -84,49 +84,85 @@
                     projectId: "ferticom-56a61",
                     storageBucket: "ferticom-56a61.appspot.com",
                     messagingSenderId: "465982718067",
-                    appId: "1:465982718067:web:08f485e8347011ca966a06",
-                    measurementId: "G-ZGL0HDVHSN"
+                    appId: "1:465982718067:web:0d5fc13cde260c17966a06",
+                    measurementId: "G-L4NPPN1D46"
                 };
               
                 // Initialize Firebase
                 const app = initializeApp(firebaseConfig);
                 const analytics = getAnalytics(app);
-                const provider = new GoogleAuthProvider(app);
+                const provider = new GoogleAuthProvider();
                 const auth = getAuth(app);
 
 
-                googlelogin.addEventListener('click', (e) => {
+                document.getElementById('googlelogin').addEventListener('click', (e) => {
+                    e.preventDefault();
                     signInWithRedirect(auth, provider);
+                });
 
-                    getRedirectResult(auth)
-                            .then((result) => {
-                                // This gives you a Google Access Token. You can use it to access Google APIs.
-                                const credential = GoogleAuthProvider.credentialFromResult(result);
-                                const token = credential.accessToken;
+                getRedirectResult(auth)
+                    .then((result) => {
+                        if (result) {
+                            // This gives you a Google Access Token. You can use it to access Google APIs.
+                            const credential = GoogleAuthProvider.credentialFromResult(result);
+                            const token = credential.accessToken;
 
-                                // The signed-in user info.
-                                const user = result.user;
+                            // The signed-in user info.
+                            const user = result.user;
 
-                                // name = displayName
-                                // email = email
-                                // phone = photoURL
-
-                                alert(user.displayName);
-                                // IdP data available using getAdditionalUserInfo(result)
-                                // ...
-                            }).catch((error) => {
+                            // Use user info (e.g., user.email)
+                            console.log('User email: ', user.email);
+                            alert('User logged in: ' + user.displayName);
+                        }
+                    })
+                    .catch((error) => {
                         // Handle Errors here.
+                        console.error('Error during sign-in: ', error);
                         const errorCode = error.code;
                         const errorMessage = error.message;
                         // The email of the user's account used.
-                        const email = error.customData.email;
+                        const email = error.customData?.email;
                         // The AuthCredential type that was used.
                         const credential = GoogleAuthProvider.credentialFromError(error);
                         // ...
                     });
-
-                });
             </script>
+
+            <!-- //     googlelogin.addEventListener('click', (e) => {
+            //         signInWithRedirect(auth, provider);
+
+            //         getRedirectResult(auth)
+            //                 .then((result) => {
+            //                     // This gives you a Google Access Token. You can use it to access Google APIs.
+            //                     const credential = GoogleAuthProvider.credentialFromResult(result);
+            //                     const token = credential.accessToken;
+
+            //                     // The signed-in user info.
+            //                     const user = result.user;
+
+            //                     // name = displayName
+            //                     // email = email
+            //                     // phone = photoURL
+
+            //                     // alert(user.displayName);
+            //                     console.log('User email: ', user.email);
+            //                     alert('User logged in: ' + user.displayName);
+            //                     // IdP data available using getAdditionalUserInfo(result)
+            //                     // ...
+            //                 }).catch((error) => {
+            //             // Handle Errors here.
+            //             console.error('Error during sign-in: ', error);
+            //             const errorCode = error.code;
+            //             const errorMessage = error.message;
+            //             // The email of the user's account used.
+            //             const email = error.customData.email;
+            //             // The AuthCredential type that was used.
+            //             const credential = GoogleAuthProvider.credentialFromError(error);
+            //             // ...
+            //         });
+
+            //     });
+            // </script> -->
         </div>
     </div>
     <script src="../public/app.js"></script>
