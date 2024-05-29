@@ -55,6 +55,5 @@
         startSlide(); // Inicia la función del carrusel
     });
 
-    //AUTENTICACION GOOGLE//
 
     
