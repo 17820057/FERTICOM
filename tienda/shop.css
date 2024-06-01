@@ -1,0 +1,396 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        background: white;
+        padding: 10px 100px;
+        position: relative;
+        border-radius: 80px;
+        bottom: -15px;
+        z-index: 1000;
+    }
+
+.logo img {
+    width: 200px;
+    height: 60px;
+    background-color: white;
+    margin-bottom: -5px;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background: #8225F7;
+}
+
+.boton-ccuenta {
+    width: 150px;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: black;
+}
+
+.boton-ccuenta,
+.inicio-sesion {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.crea-sesion {
+    background-color: white;
+}
+
+.inicio-sesion {
+    margin-right: 10px;
+    color: black;
+    font-weight: bold; 
+    background-color: white; 
+}
+
+
+.bx {
+    background-color: white;
+}
+
+.icono-tienda {
+    background-color: white;
+    text-decoration: none;
+    font-size: 40px;
+    width: 40px; 
+    height: 40px; 
+    position: absolute;
+    right: 50px;
+    top: 20px;
+}
+
+.icono-tienda a {
+    color: black;
+    background-color: white;
+}
+
+/* SLIDER INICIO */
+
+
+.sliderinicio {
+    width: 100%;
+    /* width: auto; */
+    height: 80vh;
+    /* margin: 50px auto 0; */
+    overflow: hidden;
+    position: relative;
+    margin-top: -7%;
+    z-index: 1;
+}
+
+.sliderinicio ul {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.sliderinicio ul li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.sliderinicio ul li {
+    position: absolute;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.sliderinicio ul li:first-child {
+    opacity: 1;
+}
+
+/* .sliderinicio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.slider-text {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: "Anton", sans-serif;
+
+}
+
+.main-end {
+    color: #31A44B;
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    margin-top: 2em;
+}
+
+.main-1 {
+    color: black;
+}
+
+/*PRODUCTOS*/
+
+.products {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    font-family: "Anton", sans-serif;
+}
+
+.product {
+    margin: 0 7em;
+    cursor: pointer;
+    width: 170px;
+    height: 335px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+
+
+.product h2 {
+    text-align: center;
+    background-color: #31A44B;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    margin: 0;
+    padding: 0;
+    background: #404040;
+}
+.container__footer {
+    margin-left: 5.5em;
+    display: flex;
+    flex-direction: block;
+}
+
+.footer__logos {
+    margin-top: 2em;
+    margin-left: 8em;
+    align-items: center;
+}
+
+.footer__ferticom {
+    margin-top: 1px;
+    width: 210px;
+    height: 70px;
+}
+
+.footer__redes {
+    text-align: center;
+    margin-top: 1em;
+    flex-direction: row;
+    align-items: center;
+    display: block;
+}
+
+.icons {
+    width: 40px;
+    padding: 5px;
+    margin: 0 2px;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    margin-left: 16em;
+}
+
+.footer__vinculos__i,
+.footer__vinculos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.footer__vinculos__i {
+    border-right: 3px solid #2E2E2E;
+}
+
+.v__Ayuda,
+.v__mercado,
+.v__Eventos,
+.vi__mercado,
+.vin__mercado,
+.vi__Ayuda {
+    color: #fff;
+    margin-right: 6em;
+    margin-left: 6em;
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.v__Ayuda,
+.v__mercado,
+.v__Eventos {
+    margin-top: 0.8em;
+    font-weight: 600;
+}
+
+.footer__copyright {
+    text-align: center;
+    color: #fff;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    font-size: 15px;
+}
+
+
+
+/* Estilos Base */
+
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+    .hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburguer .line {
+        width: 30px;
+        height: 3px;
+        background: #31A44B;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none; 
+    }
+    .menu-hamburguesa {
+        display: block; 
+    }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 360px) {
+}

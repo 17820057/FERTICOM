@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FERTICOM</title>
+    <link rel="icon" href="../recursos/favicon.ico" />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@543&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.js" />
+  </head>
+
+  <body>
+    <!-- <div class="seccion-fondo"> -->
+
+    <header>
+      <div class="logo">
+        <a href="../inicio/inicio.html">
+          <img src="../recursos/LOGO FERTICOM.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="hamburguer">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../inicio/inicio.html">INICIO</a></li>
+          <li><a href="../nosotros/noso.html">NOSOTROS</a></li>
+          <li><a href="../portafolio/portafolio.html">PORTAFOLIO</a></li>
+          <li><a href="../contacto/contact.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <div class="crea-sesion">
+        <a href="../public/registrate.html" target="_self" class="boton-ccuenta"
+          >Crear Cuenta</a
+        >
+        <a href="../Registro/iniciarse.html" class="inicio-sesion"
+          >Iniciar sesión</a
+        >
+
+        <div class="icono-tienda">
+          <a href="../tienda/shop.html"><i class="bx bxs-store"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      hamburguer = document.querySelector(".hamburguer");
+      hamburguer.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+
+    <div class="sliderinicio">
+      <ul>
+        <li>
+          <img src="../recursos/tienda slide inicio 1.png" alt="" />
+          <div class="slider-text">By Ferticom</div>
+        </li>
+        <li>
+          <img src="../recursos/african-people-harvesting-vegetables.jpg" alt="" />
+          <div class="slider-text">Presentes en el cambio</div>
+        </li>
+        <li>
+          <img src="../recursos/2151441211.jpg" alt="" />
+          <div class="slider-text">Con Tecnología del siglo</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-end">
+      <h1 class="main-1">SOLUCIONES AGRICOLAS INNOVADORAS</h1>
+      <h1 class="main-2">EN FERTICOM</h1>
+    </div>
+
+    <div class="products">
+        <div class="product" onclick="location.href='pagina1.html'">
+            <img src="../recursos/tienda productos 1.png" alt="MIX GRANULADO">
+            <h2>MIX GRANULADO</h2>
+        </div>
+        <div class="product" onclick="location.href='pagina2.html'">
+            <img src="../recursos/tienda productos 4.png" alt="P.A.M">
+            <h2>P.A.M</h2>
+        </div>
+        <div class="product" onclick="location.href='pagina3.html'">
+            <img src="../recursos/tienda productos 3.png" alt="N CALBOR">
+            <h2>N CALBOR</h2>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="container__footer">
+            <div class="footer__logos">
+                <img class="footer__ferticom" src="../recursos/LOGO FERTICOM blanco.png" alt="">
+                <div class="footer__redes">
+                    <a href="" target="_blank"><img class="icons" src="../recursos/logo face redes.png" alt=""></a>
+                    <a href="" target="_blank"><img class="icons" src="../recursos/logo insta redes.png" alt=""></a>
+                    <a href="" target="_blank"></a><img class="icons" src="../recursos/logo tiktok redes.png" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__vinculos__i">
+                    <a class="v__Eventos" href="../preguntas/preguntas.html">Eventos</a>
+                </div>
+                <!-- <div class="footer__vinculos__i">
+                    <a class="v__mercado" href="../preguntas/preguntas.html">Mercado</a>
+                    <a class="vi__mercado" href="../preguntas/preguntas.html">Nacional</a>
+                    <a class="vin__mercado" href="../preguntas/preguntas.html">Internacional</a>
+                </div> -->
+                <div class="footer__vinculos">
+                    <a class="v__Ayuda" href="../preguntas/preguntas.html">¿Necesitas ayuda?</a>
+                    <a class="vi__Ayuda" href="../preguntas/preguntas.html">Preguntas frecuentes</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
+        </div>
+    </footer>
+
+    <script src="shop.js"></script>
+  </body>
+</html>
