@@ -31,6 +31,10 @@ body {
     margin-bottom: -5px;
 }
 
+.nav-bar {
+    margin-right: 30px;
+}
+
 .nav-bar ul {
     display: flex;
 }
@@ -53,7 +57,7 @@ body {
 .boton-ccuenta {
     width: 150px;
     border-radius: 8px;
-    margin-right: 10px;
+    margin-right: 30px;
     padding: 10px 15px;
     background-color: black;
 }
@@ -69,10 +73,11 @@ body {
 
 .crea-sesion {
     background-color: white;
+
 }
 
 .inicio-sesion {
-    margin-right: 10px;
+    margin-right: 60px;
     color: black;
     font-weight: bold; 
     background-color: white; 
@@ -95,6 +100,22 @@ body {
 }
 
 .icono-tienda a {
+    color: black;
+    background-color: white;
+}
+
+.icono-carrito {
+    background-color: white;
+    text-decoration: none;
+    font-size: 40px;
+    width: 40px; 
+    height: 40px; 
+    position: absolute;
+    right: 100px; /* Ajusta la posición para evitar la superposición */
+    top: 20px;
+}
+
+.icono-carrito a {
     color: black;
     background-color: white;
 }
