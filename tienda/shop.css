@@ -215,7 +215,7 @@ body {
 }
 
 .product {
-    margin: 0 7em;
+    margin: 0 6em;
     cursor: pointer;
     width: 170px;
     height: 335px; 
@@ -226,7 +226,7 @@ body {
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 60%;
     flex-grow: 1;
     background-color: #ECECEC;
     padding: 10px;
@@ -321,7 +321,19 @@ video#promo-videos {
 }
 
 
-
+.boton-cart {
+    list-style: none;
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.boton-cart:hover {
+    background: grey;
+}
 
 
 
