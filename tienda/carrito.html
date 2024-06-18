@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FERTICOM</title>
+    <link rel="icon" href="../recursos/favicon.ico" />
+    <link rel="stylesheet" href="carrito.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@543&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="seccion-fondo"> -->
+
+    <header>
+      <div class="logo">
+        <a href="../inicio/inicio.html">
+          <img src="../recursos/LOGO FERTICOM.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="hamburguer">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../inicio/inicio.html">INICIO</a></li>
+          <li><a href="../nosotros/noso.html">NOSOTROS</a></li>
+          <li><a href="../portafolio/portafolio.html">PORTAFOLIO</a></li>
+          <li><a href="../contacto/contact.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <div class="crea-sesion">
+        <a href="../public/registrate.html" target="_self" class="boton-ccuenta"
+          >Crear Cuenta</a>
+        <a href="../Registro/iniciarse.html" class="inicio-sesion"
+          >Iniciar sesión</a>
+
+        <div class="icono-tienda">
+          <a href="../tienda/shop.html"><i class="bx bxs-store"></i></a>
+        </div>
+        <div class="icono-carrito">
+          <a href="../tienda/carrito.html" target="_blank"><i class='bx bxs-cart'></i></a>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      hamburguer = document.querySelector(".hamburguer");
+      hamburguer.onclick = function () {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+      };
+    </script>
+    <br>
+    <br>
+    <div class="small-container cart-page">
+
+        <table>
+            <tr>
+                <th>Producto</th>
+                <th >Cantidad</th>
+                <th >Medida</th>
+                <th >Subtotal</th>
+            </tr>
+
+            <tbody class="cart-items">
+              <tr class="cart-item">
+                <td>
+                  <div class="product-container">
+                    <img src="../recursos/tienda productos 6.png" alt="Nombre del producto">
+                    <div class="item-details">
+                      <h2>OXILOBAC</h2>
+                      <p>Precio: $20000</p>
+                      <button class="remove-button" data-index="0">Remover</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <input type="number" id="quantity-0" name="quantity" value="1" min="1" data-index="0" class="quantity-input">
+                </td>
+                <td>
+                  <select id="measure-0" name="measure" data-index="0" class="measure-select">
+                    <option value="100">100 gramos</option>
+                    <option value="500">500 gramos</option>
+                    <option value="1000">1 kilogramo</option>
+                  </select>
+                </td>
+                <td>
+                  <p>$20000</p>
+                </td>
+              </tr>
+              <tr class="cart-item">
+                <td>
+                  <div class="product-container">
+                    <img src="../recursos/tienda productos 5.png" alt="Nombre del producto">
+                    <div class="item-details">
+                      <h2>Mix granulado</h2>
+                      <p>Precio: $50000</p>
+                      <button class="remove-button" data-index="1">Remover</button>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <input type="number" id="quantity-1" name="quantity" value="1" min="1" data-index="1" class="quantity-input">
+                </td>
+                <td>
+                  <select id="measure-1" name="measure" data-index="1" class="measure-select">
+                    <option value="10">10 kilogramos</option>
+                    <option value="20">20 kilogramos</option>
+                    <option value="50">50 kilogramos</option>
+                  </select>
+                </td>
+                <td>
+                  <p>$50000</p>
+                </td>
+              </tr>
+            </tbody>
+            
+        </table>
+
+        <div class="total-price">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td id="subtotal-value">0</td>
+            </tr>
+            <tr>
+              <td>Envio</td>
+              <td id="shipping-value">0</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td id="total-value">0</td>
+            </tr>
+          </table>
+        </div>
+        <button class="checkout-button">Proceder al pago</button>
+      </div>
+    </div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container__footer">
+        <div class="footer__logos">
+            <img class="footer__ferticom" src="../recursos/LOGO FERTICOM blanco.png" alt="">
+            <div class="footer__redes">
+                <a href="" target="_blank"><img class="icons" src="../recursos/logo face redes.png" alt=""></a>
+                <a href="" target="_blank"><img class="icons" src="../recursos/logo insta redes.png" alt=""></a>
+                <a href="" target="_blank"></a><img class="icons" src="../recursos/logo tiktok redes.png" alt=""></a>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <div class="footer__vinculos__i">
+                <a class="v__Eventos" href="../preguntas/preguntas.html">Eventos</a>
+            </div>
+            <!-- <div class="footer__vinculos__i">
+                <a class="v__mercado" href="../preguntas/preguntas.html">Mercado</a>
+                <a class="vi__mercado" href="../preguntas/preguntas.html">Nacional</a>
+                <a class="vin__mercado" href="../preguntas/preguntas.html">Internacional</a>
+            </div> -->
+            <div class="footer__vinculos">
+                <a class="v__Ayuda" href="../preguntas/preguntas.html">¿Necesitas ayuda?</a>
+                <a class="vi__Ayuda" href="../preguntas/preguntas.html">Preguntas frecuentes</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copyright">
+        <p class="copy">Copyright © Ferticom. Todos los derechos reservados 2023</p>
+    </div>
+</footer>
+
+<script src="carrito.js"></script>
+</body>
+</html>

@@ -17,34 +17,3 @@ db.connect(error => {
 
 module.exports = db;
 
-
-
-
-
-
-
-
-
-// const mysql = require('mysql2')
-
-// // Configuracion Conexión a la base de datos MySQL
-// const db = mysql.createConnection({ 
-//     host: 'localhost',
-//     user: 'root',
-//     password: 'Nico28095',
-//     database: 'FERTICOM'
-// });
-
-// //funcion para conectar de la base de datos MySQL
-// function conectarDB() {
-//     db.connect((error) => {
-//         if (error){
-//             console.error("Error al conectar la DB: " + error.stack);
-//             return;
-//         }
-//         console.log("Conexion exitosa ID: " + connection.threadId)
-//     });
-//     return db;
-// }
-
-// module.exports = conectarDB();
