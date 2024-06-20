@@ -146,7 +146,8 @@ body {
     border-collapse: collapse;
 }
 
-.cart-page th, .cart-page td {
+.cart-page th, 
+.cart-page td {
     text-align: left;
     padding: 10px;
 }
@@ -163,12 +164,16 @@ body {
     margin-right: 20px;
 }
 
+.cart-item {
+    margin-top: 100px;
+}
+
 .cart-page .item-details {
     display: flex;
     flex-direction: column;
-    /* margin-left: 130px;
+    margin-left: 130px;
     margin-top: -170px;
-    margin-bottom: 6em; */
+    margin-bottom: 6em;
 }
 
 .cart-page .quantity-input, 
@@ -176,6 +181,9 @@ body {
     width: 100px;
     margin-top: 0.5em;
 }
+
+/* .cart-page td .subtotal-carrito {
+} */
 
 .cart-page .remove-button {
     background: none;

@@ -75,13 +75,19 @@
     <br>
     <div class="small-container cart-page">
 
+        <div class="main-carrovacio">
+          <p class="carrito-vacio">Tu carro esta vacio</p>
+        </div>
+
         <table>
+          <thead>
             <tr>
                 <th>Producto</th>
-                <th >Cantidad</th>
-                <th >Medida</th>
-                <th >Subtotal</th>
+                <th>Cantidad</th>
+                <th>Medida</th>
+                <th>Subtotal</th>
             </tr>
+          </thead>
 
             <tbody class="cart-items">
               <tr class="cart-item">
@@ -95,19 +101,22 @@
                     </div>
                   </div>
                 </td>
-                <td>
-                  <input type="number" id="quantity-0" name="quantity" value="1" min="1" data-index="0" class="quantity-input">
-                </td>
-                <td>
-                  <select id="measure-0" name="measure" data-index="0" class="measure-select">
-                    <option value="100">100 gramos</option>
-                    <option value="500">500 gramos</option>
-                    <option value="1000">1 kilogramo</option>
-                  </select>
-                </td>
-                <td>
-                  <p>$20000</p>
-                </td>
+                <div class="columna">
+                  <td>
+                    <input type="number" id="quantity-0" name="quantity" value="1" min="1" data-index="0" class="quantity-input">
+                  </td>
+                  <td>
+                    <select id="measure-0" name="measure" data-index="0" class="measure-select">
+                      <option value="100">100 gramos</option>
+                      <option value="500">500 gramos</option>
+                      <option value="1000">1 kilogramo</option>
+                    </select>
+                  </td>
+                  <td class="subtotal-carrito">
+                    <p>$20000</p>
+                  </td>
+                </div>
+                
               </tr>
               <tr class="cart-item">
                 <td>
@@ -120,19 +129,21 @@
                     </div>
                   </div>
                 </td>
-                <td>
-                  <input type="number" id="quantity-1" name="quantity" value="1" min="1" data-index="1" class="quantity-input">
-                </td>
-                <td>
-                  <select id="measure-1" name="measure" data-index="1" class="measure-select">
-                    <option value="10">10 kilogramos</option>
-                    <option value="20">20 kilogramos</option>
-                    <option value="50">50 kilogramos</option>
-                  </select>
-                </td>
-                <td>
-                  <p>$50000</p>
-                </td>
+                <div class="columna">
+                  <td>
+                    <input type="number" id="quantity-1" name="quantity" value="1" min="1" data-index="1" class="quantity-input">
+                  </td>
+                  <td>
+                    <select id="measure-1" name="measure" data-index="1" class="measure-select">
+                      <option value="10">10 kilogramos</option>
+                      <option value="20">20 kilogramos</option>
+                      <option value="50">50 kilogramos</option>
+                    </select>
+                  </td>
+                  <td class="subtotal-carrito">
+                    <p>$50000</p>
+                  </td>
+                </div>
               </tr>
             </tbody>
             
