@@ -146,6 +146,10 @@ body {
     border-collapse: collapse;
 }
 
+.cart-page table thead{
+    font-weight: 700;
+}
+
 .cart-page th, 
 .cart-page td {
     text-align: left;
@@ -171,9 +175,9 @@ body {
 .cart-page .item-details {
     display: flex;
     flex-direction: column;
-    margin-left: 130px;
+    /* margin-left: 130px;
     margin-top: -170px;
-    margin-bottom: 6em;
+    margin-bottom: 6em; */
 }
 
 .cart-page .quantity-input, 
@@ -198,6 +202,51 @@ body {
     display: flex;
     align-items: center;
   }
+
+  .quantity-container {
+    display: flex; 
+    align-items: center;
+}
+  
+  .quantity-container i {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .quantity-container i:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quantity-input {
+    background: none;
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin: 0 -20px;
+  }
+  
+/* Remove arrows in input number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none; /* Propiedad estándar */
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield; /* Propiedad estándar */
+}
+
+
+  
   
   /* .cart-page .product-container img {
     width: 100px;  Ajusta el tamaño según sea necesario 

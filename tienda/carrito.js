@@ -1,67 +1,160 @@
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const cartItemsContainer = document.querySelector('.cart-items');
+//     const subtotalValue = document.getElementById('subtotal-value');
+//     const shippingValue = document.getElementById('shipping-value');
+//     const totalValue = document.getElementById('total-value');
+  
+//     let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+//     function updateCartDisplay() {
+//       cartItemsContainer.innerHTML = '';
+//       let subtotal = 0;
+//       cart.forEach((item, index) => {
+//         const measure = item.measures.find(m => m.measure === item.measure);
+//         const itemTotal = item.quantity * measure.price;
+//         subtotal += itemTotal;
+  
+//         const cartItem = document.createElement('tr');
+//         cartItem.innerHTML = `
+
+//         <td>
+//         <img src="${item.image}" alt="${item.name}">
+//         <div class="item-details">
+//             <h2>${item.name}</h2>
+//             <label for="quantity-${index}">Cantidad: </label>
+//             <div class="quantity-container">
+//                 <i class='bx bx-minus' restar-cantidad></i>
+//                 <input type="number" id="quantity-${index}" name="quantity" value="${item.quantity}" min="1" data-index="${index}" class="quantity-input">
+//                 <i class='bx bx-plus' sumar-cantidad></i>
+//             </div>
+//             <label for="measure-${index}">Medida: </label>
+//             <select id="measure-${index}" name="measure" data-index="${index}" class="measure-select">
+//                 ${item.measures.map(m => `<option value="${m.measure}" ${m.measure === item.measure ? 'selected' : ''}>${m.measure}</option>`).join('')}
+//             </select>
+//             <p>Precio: $${measure.price}</p>
+//             <p>Subtotal: $${itemTotal.toFixed()}</p>
+//             <button class="remove-button" data-index="${index}">Remover</button>
+//         </div>
+//     </td>
+//     `;
+//     cartItemsContainer.appendChild(cartItem);
+//     });
+//       const shipping = 15000; // Precio fijo de envío
+//       const total = subtotal + shipping;
+//       subtotalValue.textContent = subtotal.toFixed(2);
+//       shippingValue.textContent = shipping.toFixed();
+//       totalValue.textContent = total.toFixed(2);
+//     }
+  
+//     cartItemsContainer.addEventListener('input', (e) => {
+//       const index = e.target.dataset.index;
+//       if (e.target.classList.contains('quantity-input')) {
+//         cart[index].quantity = e.target.value;
+//       } else if (e.target.classList.contains('measure-select')) {
+//         cart[index].measure = e.target.value;
+//       }
+//       localStorage.setItem('cart', JSON.stringify(cart));
+//       updateCartDisplay();
+//     });
+  
+//     cartItemsContainer.addEventListener('click', (e) => {
+//       if (e.target.classList.contains('remove-button')) {
+//         const index = e.target.dataset.index;
+//         cart.splice(index, 1);
+//         localStorage.setItem('cart', JSON.stringify(cart));
+//         updateCartDisplay();
+//       }
+//     });
+  
+//     updateCartDisplay();
+//   });
+  
+
 document.addEventListener('DOMContentLoaded', function () {
-    const cartItemsContainer = document.querySelector('.cart-items');
-    const subtotalValue = document.getElementById('subtotal-value');
-    const shippingValue = document.getElementById('shipping-value');
-    const totalValue = document.getElementById('total-value');
-  
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-  
-    function updateCartDisplay() {
+  const cartItemsContainer = document.querySelector('.cart-items');
+  const subtotalValue = document.getElementById('subtotal-value');
+  const shippingValue = document.getElementById('shipping-value');
+  const totalValue = document.getElementById('total-value');
+
+  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+  function updateCartDisplay() {
       cartItemsContainer.innerHTML = '';
       let subtotal = 0;
       cart.forEach((item, index) => {
-        const measure = item.measures.find(m => m.measure === item.measure);
-        const itemTotal = item.quantity * measure.price;
-        subtotal += itemTotal;
-  
-        const cartItem = document.createElement('tr');
-        cartItem.innerHTML = `
-        <td>
-        <img src="${item.image}" alt="${item.name}">
-        <div class="item-details">
-            <h2>${item.name}</h2>
-            <label for="quantity-${index}">Cantidad: </label>
-            <input type="number" id="quantity-${index}" name="quantity" value="${item.quantity}" min="1" data-index="${index}" class="quantity-input">
-            <label for="measure-${index}">Medida: </label>
-            <select id="measure-${index}" name="measure" data-index="${index}" class="measure-select">
-                ${item.measures.map(m => `<option value="${m.measure}" ${m.measure === item.measure ? 'selected' : ''}>${m.measure}</option>`).join('')}
-            </select>
-            <p>Precio: $${measure.price}</p>
-            <p>Subtotal: $${itemTotal.toFixed()}</p>
-            <button class="remove-button" data-index="${index}">Remover</button>
-        </div>
-    </td>
-    `;
-    cartItemsContainer.appendChild(cartItem);
-    });
+          const measure = item.measures.find(m => m.measure === item.measure);
+          const itemTotal = item.quantity * measure.price;
+          subtotal += itemTotal;
+
+          const cartItem = document.createElement('tr');
+          cartItem.innerHTML = `
+              <td>
+                  <img src="${item.image}" alt="${item.name}">
+                  <div class="item-details">
+                      <h2>${item.name}</h2>
+                      <label for="quantity-${index}">Cantidad: </label>
+                      <div class="quantity-container">
+                          <i class='bx bx-minus' data-action="decrease" data-index="${index}"></i>
+                          <input type="number" id="quantity-${index}" name="quantity" value="${item.quantity}" min="1" data-index="${index}" class="quantity-input">
+                          <i class='bx bx-plus' data-action="increase" data-index="${index}"></i>
+                      </div>
+                      <label for="measure-${index}">Medida: </label>
+                      <select id="measure-${index}" name="measure" data-index="${index}" class="measure-select">
+                          ${item.measures.map(m => `<option value="${m.measure}" ${m.measure === item.measure ? 'selected' : ''}>${m.measure}</option>`).join('')}
+                      </select>
+                      <p>Precio: $${measure.price}</p>
+                      <p>Subtotal: $${itemTotal.toFixed(2)}</p>
+                      <button class="remove-button" data-index="${index}">Remover</button>
+                  </div>
+              </td>
+          `;
+          cartItemsContainer.appendChild(cartItem);
+      });
+
       const shipping = 15000; // Precio fijo de envío
       const total = subtotal + shipping;
       subtotalValue.textContent = subtotal.toFixed(2);
-      shippingValue.textContent = shipping.toFixed();
+      shippingValue.textContent = shipping.toFixed(2);
       totalValue.textContent = total.toFixed(2);
-    }
-  
-    cartItemsContainer.addEventListener('input', (e) => {
+  }
+
+  cartItemsContainer.addEventListener('click', (e) => {
+      const action = e.target.dataset.action;
       const index = e.target.dataset.index;
-      if (e.target.classList.contains('quantity-input')) {
-        cart[index].quantity = e.target.value;
-      } else if (e.target.classList.contains('measure-select')) {
-        cart[index].measure = e.target.value;
+
+      if (action === "decrease" && cart[index].quantity > 1) {
+          cart[index].quantity--;
+      } else if (action === "increase") {
+          cart[index].quantity++;
+      } else if (e.target.classList.contains('remove-button')) {
+          cart.splice(index, 1);
       }
+
       localStorage.setItem('cart', JSON.stringify(cart));
       updateCartDisplay();
-    });
-  
-    cartItemsContainer.addEventListener('click', (e) => {
-      if (e.target.classList.contains('remove-button')) {
-        const index = e.target.dataset.index;
-        cart.splice(index, 1);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        updateCartDisplay();
-      }
-    });
-  
-    updateCartDisplay();
   });
+
+  cartItemsContainer.addEventListener('change', (e) => {
+      const index = e.target.dataset.index;
+      if (e.target.classList.contains('measure-select')) {
+          cart[index].measure = e.target.value;
+          localStorage.setItem('cart', JSON.stringify(cart));
+          updateCartDisplay();
+      } else if (e.target.classList.contains('quantity-input')) {
+          const value = parseInt(e.target.value, 10);
+          if (!isNaN(value) && value >= 1) {
+              cart[index].quantity = value;
+              localStorage.setItem('cart', JSON.stringify(cart));
+              updateCartDisplay();
+          } else {
+              e.target.value = cart[index].quantity;
+              // Puedes agregar una alerta o mensaje de validación aquí si el usuario ingresa un valor no válido
+          }
+      }
+  });
+
+  updateCartDisplay();
+});
+
   
